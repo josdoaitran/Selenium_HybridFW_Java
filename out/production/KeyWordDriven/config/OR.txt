@@ -1,0 +1,6 @@
+# Home Page
+link_StrategicDecision =.//*[@id='content']/div[3]/div[1]/div/div/div/p[2]/span/a[1]
+
+# Practiceform page
+textbox=.//*[@id='vfb-9']
+textbox_email=.//*[@id='text-11']/div/form/p[2]/input
