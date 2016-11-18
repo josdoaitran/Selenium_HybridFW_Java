@@ -28,5 +28,5 @@ Support:
 
 - getscreenshot
     + To take screenshots for failed steps on a test cases.
-    + Screenshot file be named following naming convention.
+    + Reports file be named following naming convention.
     + Error__[TestCase]__[TestStep] (Eg: Error__HOME_SITE_01__TS003.png)

@@ -1,13 +1,11 @@
 package executionEngine;
 
 import config.Constants;
-import org.apache.commons.io.FileUtils;
 import org.apache.log4j.xml.DOMConfigurator;
 import support.Keyword;
 import support.Log;
 import support.ReadWriteExcel;
 
-import java.io.File;
 import java.io.FileInputStream;
 import java.lang.reflect.Method;
 import java.util.Properties;
@@ -47,10 +45,10 @@ public class Controller {
         //
         /////////////////////////////////////////////////////////////////////////////////////////
         new Controller();
-        File source = new File(Constants.Path_TestData);
+        /*File source = new File(Constants.Path_TestData);
         File dest = new File(Constants.Path_SaveExcel);
-        FileUtils.copyFile(source,dest);
-        ReadWriteExcel.setExcelFile(Constants.Path_SaveExcel);         //This is to start the Log4j logging in the test case
+        FileUtils.copyFile(source,dest);*/
+        ReadWriteExcel.setExcelFile(Constants.Path_TestData);         //This is to start the Log4j logging in the test case
         DOMConfigurator.configure("log4j.xml");
         String Path_OR = Constants.Path_OR;
         FileInputStream fs = new FileInputStream(Path_OR);
@@ -59,7 +57,6 @@ public class Controller {
         Controller startEngine = new Controller();
         startEngine.execute_TestCase();
     }
-
     private void execute_TestCase() throws Exception {
         //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         //  Desc: This function will be used to read TestSuite ~ SheetTestCases. And Read each specify TestSteps on each Test Casse
@@ -102,7 +99,7 @@ public class Controller {
                     Log.endTestCase(sTestCaseID);
                     System.out.println("TestCase: Passed");
                 }
-                //ReadWriteExcel.saveExcelFile(Constants.Path_SaveExcel);
+                ReadWriteExcel.saveExcelFile(Constants.Path_SaveExcel);
             }
         }
     }
@@ -111,7 +108,7 @@ public class Controller {
         // Method to control execution of all actions.
         // And will set value "PASSED" / "FAILED" for each TestSteps.
         // Improvement: More data. Source: https://goo.gl/TB0wmO (07-Nov-16)
-        // Updated on 08-Nov-16 => Screenshot
+        // Updated on 08-Nov-16 => Reports
         /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         for(int i=0;i<method.length;i++){
             if(method[i].getName().equals(sActionKeyword)){
