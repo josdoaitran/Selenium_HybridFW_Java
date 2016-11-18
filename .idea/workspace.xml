@@ -4,23 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/src/executionEngine/Controller.java" line="54" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aaa8cf3e-2e30-4182-96cb-32ec6d8c7b44" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/KeyWordDriven/Screenshot/Error__TestCase1__TS_003__Tue Nov 15 15-44-24 ICT 2016.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Results/DataEngine.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Screenshot/Error__TestCase1__TS_003__Tue Nov 15 15-44-24 ICT 2016.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Screenshot/Error__TestCase1__TS_003__Wed Nov 16 15-36-27 ICT 2016.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/KeyWordDriven/dataEngine/DataEngine.xlsx" afterPath="$PROJECT_DIR$/out/production/KeyWordDriven/dataEngine/DataEngine.xlsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/KeyWordDriven/executionEngine/Controller.class" afterPath="$PROJECT_DIR$/out/production/KeyWordDriven/executionEngine/Controller.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dataEngine/DataEngine.xlsx" afterPath="$PROJECT_DIR$/src/dataEngine/DataEngine.xlsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ReadMe.txt" afterPath="$PROJECT_DIR$/ReadMe.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logfile.log" afterPath="$PROJECT_DIR$/logfile.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/config/Constants.java" afterPath="$PROJECT_DIR$/src/config/Constants.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/executionEngine/Controller.java" afterPath="$PROJECT_DIR$/src/executionEngine/Controller.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/support/Keyword.java" afterPath="$PROJECT_DIR$/src/support/Keyword.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Screenshot/Error__TestCase1__TS_003__Fri Nov 11 14-56-55 ICT 2016.png" afterPath="$PROJECT_DIR$/src/Reports/Error__TestCase1__TS_003__Fri Nov 11 14-56-55 ICT 2016.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Screenshot/Error__TestCase1__TS_003__Mon Nov 14 11-47-40 ICT 2016.png" afterPath="$PROJECT_DIR$/src/Reports/Error__TestCase1__TS_003__Mon Nov 14 11-47-40 ICT 2016.png" />
-    </list>
+    <list default="true" id="aaa8cf3e-2e30-4182-96cb-32ec6d8c7b44" name="Default" comment="" />
     <ignored path="Java_selenium.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -881,12 +865,12 @@
       <workItem from="1479284760600" duration="311000" />
       <workItem from="1479285110241" duration="879000" />
       <workItem from="1479310022458" duration="1982000" />
-      <workItem from="1479455674452" duration="2697000" />
+      <workItem from="1479455674452" duration="2968000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="155571000" />
+    <option name="totallyTimeSpent" value="155842000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
