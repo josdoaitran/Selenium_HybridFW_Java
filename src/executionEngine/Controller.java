@@ -25,14 +25,17 @@ public class Controller {
         /////////////////////////////////////////////////////////////////////////////////////////
         // Desc: Main
         // Resolve issues => make the differences to old version on web. On 28-Oct-2016 ~~ new Controller();
-        //
+        // Update: 19-Nov-2016      Data: Restructure data and how to execute TestSuite.
         /////////////////////////////////////////////////////////////////////////////////////////
         DOMConfigurator.configure("log4j.xml");
         String Path_OR = Constants.Path_OR;
         FileInputStream fs = new FileInputStream(Path_OR);
         OR = new Properties(System.getProperties());
         OR.load(fs);
-        ExecuteTestcase.execute_TestCase(".\\src\\dataEngine\\TestSuite1.xlsx",".\\src\\reports\\TestResult_TestSuite1.xlsx","TestSuite1");
-        ExecuteTestcase.execute_TestCase(".\\src\\dataEngine\\TestSuite2.xlsx",".\\src\\reports\\TestResult_TestSuite2.xlsx","TestSuite2");
+        //////////////////////////////////////////////////////////////////////////////////////////
+        // Select the testsuite and test report location and input name of test suite before run
+        /////////////////////////////////////////////////////////////////////////////////////////
+        ExecuteTestcase.execute_TestCase(".\\src\\testing\\dataEngine\\TestSuite1.xlsx",".\\src\\testing\\reports\\TestResult_TestSuite1.xlsx","TestSuite1");
+        ExecuteTestcase.execute_TestCase(".\\src\\testing\\dataEngine\\TestSuite2.xlsx",".\\src\\testing\\reports\\TestResult_TestSuite2.xlsx","TestSuite2");
     }
 }

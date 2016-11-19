@@ -83,7 +83,7 @@ public class ExecuteTestcase {
         // Method to control execution of all actions.
         // And will set value "PASSED" / "FAILED" for each TestSteps.
         // Improvement: More data. Source: https://goo.gl/TB0wmO (07-Nov-16)
-        // Updated on 08-Nov-16 => reports
+        // Updated on 08-Nov-16 => testing.reports
         /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         for(int i=0;i<method.length;i++){
             if(method[i].getName().equals(sActionKeyword)){

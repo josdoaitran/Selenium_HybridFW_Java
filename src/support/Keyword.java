@@ -237,7 +237,7 @@ public class Keyword {
         //  Format of screenshot file name: Error__"TestCaseID"__"TestStepName"__"TimeStampValue".png
         ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
         File scrFile = ((TakesScreenshot) DRIVER).getScreenshotAs(OutputType.FILE);
-        FileUtils.copyFile(scrFile, new File("src\\reports\\imagesLog\\" + "Error__" + testsuiteName+"__"+ sTestCaseID + "__" + TestStepName + "__" + GetTimeStampValue() + ".png"));
+        FileUtils.copyFile(scrFile, new File("src\\testing\\reports\\imagesLog\\" + "Error__" + testsuiteName+"__"+ sTestCaseID + "__" + TestStepName + "__" + GetTimeStampValue() + ".png"));
     }
     public  static String GetTimeStampValue()throws IOException {
         Calendar cal = Calendar.getInstance();
