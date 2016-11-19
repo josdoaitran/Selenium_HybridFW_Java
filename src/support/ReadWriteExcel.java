@@ -125,7 +125,7 @@ public class ReadWriteExcel {
     @SuppressWarnings("static-access")
 //This method is use to write value in the excel sheet
 //This method accepts four arguments (Result, Row Number, Column Number & Sheet Name)
-    public static void setCellData(String Result,  int RowNum, int ColNum, String SheetName) throws Exception    {
+    public static void setCellData(String Result,  int RowNum, int ColNum, String SheetName, String ExcelSave) throws Exception    {
         try{
             ExcelWSheet = ExcelWBook.getSheet(SheetName);
             Row  = ExcelWSheet.getRow(RowNum);
@@ -137,11 +137,11 @@ public class ReadWriteExcel {
                 Cell.setCellValue(Result);
             }
             // Constant variables Test Data path and Test Data file name
-            FileOutputStream fileOut = new FileOutputStream(Constants.Path_TestData);
+            FileOutputStream fileOut = new FileOutputStream(ExcelSave);
             ExcelWBook.write(fileOut);
             //fileOut.flush();
             fileOut.close();
-            ExcelWBook = new XSSFWorkbook(new FileInputStream(Constants.Path_TestData));
+            ExcelWBook = new XSSFWorkbook(new FileInputStream(ExcelSave));
         }catch(Exception e){
             ExecuteTestcase.bResult = false;
         }

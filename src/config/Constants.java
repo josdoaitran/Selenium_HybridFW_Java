@@ -5,13 +5,13 @@ package config;
  * Created by DoaiTran on 27-Oct-16.
  * Updated by Doai Tran: 01-Nov-16. => Test Suite execution engine. Source: https://goo.gl/K73xH1
  * Updated by DoaiTran: 04-Nov-16. => Ref: https://goo.gl/vbnMNq
- * Updated by DoaiTran: 08-Nov-16 => Ref: Reports
+ * Updated by DoaiTran: 08-Nov-16 => Ref: reports
  */
 public class Constants {
     public static final String URL = "http://www.seleniumframework.com/";
-    public static final String Path_TestData = "D:\\OneDrive\\Data for Learning\\Automation Testing\\Selenium\\Java_selenium\\KeyWordDriven\\src\\dataEngine\\TestSuite1.xlsx";
-    public static final String Path_OR = "D:\\OneDrive\\Data for Learning\\Automation Testing\\Selenium\\Java_selenium\\KeyWordDriven\\src\\config\\OR.txt";
-    public static final String Path_SaveExcel = "D:\\OneDrive\\Data for Learning\\Automation Testing\\Selenium\\Java_selenium\\KeyWordDriven\\src\\Reports\\TestResult_TestSuite1.xlsx";
+    //public static final String Path_TestData = ".\\src\\dataEngine\\TestSuite1.xlsx";
+    public static final String Path_OR = ".\\src\\config\\OR.txt";
+    //public static final String Path_SaveExcel = ".\\src\\reports\\TestResult_TestSuite1.xlsx";
 
     //List of Data Sheet Column Numbers
     public static final int Col_TestCaseID = 0;

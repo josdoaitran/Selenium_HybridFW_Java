@@ -32,6 +32,7 @@ public class Controller {
         FileInputStream fs = new FileInputStream(Path_OR);
         OR = new Properties(System.getProperties());
         OR.load(fs);
-        ExecuteTestcase.execute_TestCase(Constants.Path_TestData,Constants.Path_SaveExcel);
+        ExecuteTestcase.execute_TestCase(".\\src\\dataEngine\\TestSuite1.xlsx",".\\src\\reports\\TestResult_TestSuite1.xlsx","TestSuite1");
+        ExecuteTestcase.execute_TestCase(".\\src\\dataEngine\\TestSuite2.xlsx",".\\src\\reports\\TestResult_TestSuite2.xlsx","TestSuite2");
     }
 }

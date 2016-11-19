@@ -20,6 +20,7 @@ import java.util.concurrent.TimeUnit;
 import static executionEngine.Controller.*;
 import static support.ExecuteTestcase.TestStepName;
 import static support.ExecuteTestcase.sTestCaseID;
+import static support.ExecuteTestcase.testsuiteName;
 
 
 /**
@@ -236,7 +237,7 @@ public class Keyword {
         //  Format of screenshot file name: Error__"TestCaseID"__"TestStepName"__"TimeStampValue".png
         ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
         File scrFile = ((TakesScreenshot) DRIVER).getScreenshotAs(OutputType.FILE);
-        FileUtils.copyFile(scrFile, new File("src\\Reports\\ImagesLog\\" + "Error__" + sTestCaseID + "__" + TestStepName + "__" + GetTimeStampValue() + ".png"));
+        FileUtils.copyFile(scrFile, new File("src\\reports\\imagesLog\\" + "Error__" + testsuiteName+"__"+ sTestCaseID + "__" + TestStepName + "__" + GetTimeStampValue() + ".png"));
     }
     public  static String GetTimeStampValue()throws IOException {
         Calendar cal = Calendar.getInstance();

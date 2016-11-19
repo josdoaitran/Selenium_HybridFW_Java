@@ -1,7 +1,7 @@
 Framework for Automation testing.
 Created by DoaiTran.
 ========================
-Version 1 (08-Nov-2016)
+Version 2.2 (19-Nov-2016)
 ========================
 Support:
 + Browsers: FF V.47.0.2; Chrome (Lasted version); IE (10;11)
@@ -28,5 +28,5 @@ Support:
 
 - getscreenshot
     + To take screenshots for failed steps on a test cases.
-    + Reports file be named following naming convention.
-    + Error__[TestCase]__[TestStep] (Eg: Error__HOME_SITE_01__TS003.png)
+    + reports file be named following naming convention.
+    + Error__[TestCase]__[TestStep] (Eg: Error__TestCase1__TS_003__Mon Nov 14 11-47-40 ICT 2016.png)
