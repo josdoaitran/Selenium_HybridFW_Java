@@ -7,6 +7,7 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 
@@ -32,11 +33,13 @@ public class ReadWriteExcel {
             ExcelWBook = new XSSFWorkbook(ExcelFile);
         }catch (Exception e){
             Log.error("Class ReadWrite | Method setExcelFile | Exception desc: "+ e.getMessage());
-            Controller.bResult = false;
+            ExecuteTestcase.bResult = false;
         }
     }
     public static void  closeExcelfile(String Path)throws Exception{
-        ExcelWBook.close();
+        //ExcelWBook.close();
+        FileInputStream ExcelFile = new FileInputStream(Path);
+        ExcelFile.close();
     }
     //////////////////////////////////////////////////////////////////////////////////////
     // Des: This method is to set to get the number of row on a sheet
@@ -51,7 +54,7 @@ public class ReadWriteExcel {
 
         }catch (Exception e) {
             Log.error("Class ReadWriteExcel| Method getNumberofRow | Exception desc: "+ e.getMessage());
-            Controller.bResult = false;
+            ExecuteTestcase.bResult = false;
         }
         return number;
     }
@@ -70,7 +73,7 @@ public class ReadWriteExcel {
         }
         catch (Exception e){
             Log.error("Class ReadWriteExcel| Method getCellData | Exception desc: "+ e.getMessage());
-            Controller.bResult = false;
+            ExecuteTestcase.bResult = false;
             return "";
         }
     }
@@ -115,7 +118,7 @@ public class ReadWriteExcel {
             return number;
         }catch (Exception e){
             Log.error("Class ReadWriteExcel| Method getRowContains | Exception desc: "+ e.getMessage());
-            Controller.bResult = false;
+            ExecuteTestcase.bResult = false;
             return 0;
         }
     }
@@ -140,7 +143,7 @@ public class ReadWriteExcel {
             fileOut.close();
             ExcelWBook = new XSSFWorkbook(new FileInputStream(Constants.Path_TestData));
         }catch(Exception e){
-            Controller.bResult = false;
+            ExecuteTestcase.bResult = false;
         }
     }
     /////////////////////////////////////////////////////////////////////////////////////////////////
@@ -157,7 +160,7 @@ public class ReadWriteExcel {
             ExcelWBook.write(fout);
         }catch (Exception e){
             Log.error("Class ReadWrite | Method saveExcelFile | Exception desc: "+ e.getMessage());
-            Controller.bResult = false;
+            ExecuteTestcase.bResult = false;
         }
     }
 }

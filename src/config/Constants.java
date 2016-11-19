@@ -9,9 +9,10 @@ package config;
  */
 public class Constants {
     public static final String URL = "http://www.seleniumframework.com/";
-    public static final String Path_TestData = "D:\\OneDrive\\Data for Learning\\Automation Testing\\Selenium\\Java_selenium\\KeyWordDriven\\src\\dataEngine\\DataEngine.xlsx";
+    public static final String Path_TestData = "D:\\OneDrive\\Data for Learning\\Automation Testing\\Selenium\\Java_selenium\\KeyWordDriven\\src\\dataEngine\\TestSuite1.xlsx";
     public static final String Path_OR = "D:\\OneDrive\\Data for Learning\\Automation Testing\\Selenium\\Java_selenium\\KeyWordDriven\\src\\config\\OR.txt";
-    public static final String Path_SaveExcel = "D:\\OneDrive\\Data for Learning\\Automation Testing\\Selenium\\Java_selenium\\KeyWordDriven\\src\\Reports\\DataEngine.xlsx";
+    public static final String Path_SaveExcel = "D:\\OneDrive\\Data for Learning\\Automation Testing\\Selenium\\Java_selenium\\KeyWordDriven\\src\\Reports\\TestResult_TestSuite1.xlsx";
+
     //List of Data Sheet Column Numbers
     public static final int Col_TestCaseID = 0;
     public static final int Col_TestStepID = 1 ;

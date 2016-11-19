@@ -1,7 +1,6 @@
 package support;
 
 import config.Constants;
-import executionEngine.Controller;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
@@ -19,6 +18,10 @@ import java.util.Calendar;
 import java.util.concurrent.TimeUnit;
 
 import static executionEngine.Controller.*;
+import static support.ExecuteTestcase.TestStepName;
+import static support.ExecuteTestcase.sTestCaseID;
+
+
 /**
  * Created by DoaiTran on 26-Oct-16.
  * Create all definitions for actions on Selenium
@@ -29,7 +32,7 @@ public class Keyword {
         ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
         // Des: This function is used to define the browser
         // Created by DoaiTran. Date: 26-Oct-2016
-        // The lasted updated by: Doai Tran 04-Nov-2016 Ref: https://goo.gl/qRMJtv
+        // The lasted updated by: DoaiTran 04-Nov-2016 Ref: https://goo.gl/qRMJtv
         ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
         Log.info("Opening Browser");
         try {
@@ -53,7 +56,7 @@ public class Keyword {
             }
         }catch (Exception e){
             Log.info("Not able to open Browser --- " + e.getMessage());
-            Controller.bResult = false;
+            ExecuteTestcase.bResult = false;
         }
     }
     public static void navigateToURL (String object, String data){
@@ -68,7 +71,7 @@ public class Keyword {
             DRIVER.navigate().to(Constants.URL);
         }catch (Exception e){
             Log.info("Not able to navigate to URL --- "+ e.getMessage());
-            Controller.bResult = false;
+            ExecuteTestcase.bResult = false;
         }
     }
 
@@ -84,7 +87,7 @@ public class Keyword {
             DRIVER.navigate().to(data);
         }catch (Exception e){
             Log.info("Not able to navigate to URL --- "+ e.getMessage());
-            Controller.bResult = false;
+            ExecuteTestcase.bResult = false;
         }
     }
     public static void closeBrowser(String object,String data){
@@ -98,7 +101,7 @@ public class Keyword {
             DRIVER.quit();
         }catch (Exception e){
             Log.info("Not able to close Browser --- "+ e.getMessage());
-            Controller.bResult = false;
+            ExecuteTestcase.bResult = false;
         }
     }
     public static void clickElement(String object, String data){
@@ -112,7 +115,7 @@ public class Keyword {
             DRIVER.findElement(By.xpath(OR.getProperty(object))).click();
         }catch (Exception e){
             Log.info("Not able to click on Element --- "+ e.getMessage());
-            Controller.bResult = false;
+            ExecuteTestcase.bResult = false;
         }
     }
     public static void waitandPause(String object,String data) throws InterruptedException {
@@ -129,7 +132,7 @@ public class Keyword {
         }
         catch (Exception e){
             Log.info("Not able to wait --- "+ e.getMessage());
-            Controller.bResult = false;
+            ExecuteTestcase.bResult = false;
         }
     }
     public static void input(String object, String data){
@@ -146,7 +149,7 @@ public class Keyword {
             DRIVER.findElement(By.xpath(OR.getProperty(object))).sendKeys(data);
         }catch (Exception e){
             Log.info("Not able to input --- "+ e.getMessage());
-            Controller.bResult = false;
+            ExecuteTestcase.bResult = false;
         }
     }
     public static void clearTextBox(String object, String data){
@@ -162,7 +165,7 @@ public class Keyword {
             wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(OR.getProperty(object)))).clear();
         }catch (Exception e){
             Log.info("Not able to clear text box" + e.getMessage());
-            Controller.bResult = false;
+            ExecuteTestcase.bResult = false;
         }
     }
     public static void submit(String object, String data){
@@ -178,7 +181,7 @@ public class Keyword {
             wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(OR.getProperty(object)))).submit();
         }catch (Exception e){
             Log.info("Not able ti submit button"+e.getMessage());
-            Controller.bResult =false;
+            ExecuteTestcase.bResult =false;
         }
     }
     public static void navigatetoBack(String object, String data){
@@ -193,7 +196,7 @@ public class Keyword {
             DRIVER.navigate().back();
         }catch (Exception e){
             Log.info("Not able to NavigatetoBack");
-            Controller.bResult = false;
+            ExecuteTestcase.bResult = false;
         }
     }
     public static void  navigatetoForward(String object, String data){
@@ -208,7 +211,7 @@ public class Keyword {
             DRIVER.navigate().forward();
         }catch (Exception e){
             Log.info("Not able to NavigatetoForward");
-            Controller.bResult = false;
+            ExecuteTestcase.bResult = false;
         }
     }
     public static void  refreshPage(String object, String data){
@@ -223,7 +226,7 @@ public class Keyword {
             DRIVER.navigate().refresh();
         }catch (Exception e){
             Log.info("Not able to refresh page");
-            Controller.bResult = false;
+            ExecuteTestcase.bResult = false;
         }
     }
     public static void getscreenshot() throws Exception {
@@ -233,7 +236,7 @@ public class Keyword {
         //  Format of screenshot file name: Error__"TestCaseID"__"TestStepName"__"TimeStampValue".png
         ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
         File scrFile = ((TakesScreenshot) DRIVER).getScreenshotAs(OutputType.FILE);
-        FileUtils.copyFile(scrFile, new File("src\\Reports\\" + "Error__" + sTestCaseID + "__" + TestStepName + "__" + GetTimeStampValue() + ".png"));
+        FileUtils.copyFile(scrFile, new File("src\\Reports\\ImagesLog\\" + "Error__" + sTestCaseID + "__" + TestStepName + "__" + GetTimeStampValue() + ".png"));
     }
     public  static String GetTimeStampValue()throws IOException {
         Calendar cal = Calendar.getInstance();
