@@ -2,13 +2,11 @@ package support;
 
 import config.Constants;
 import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.By;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -29,7 +27,7 @@ import static support.ExecuteTestcase.testsuiteName;
  */
 public class Keyword {
     public static WebDriver DRIVER;
-    public static void browserType(String object, String data){
+    public static void openBrowser(String object, String data){
         ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
         // Des: This function is used to define the browser
         // Created by DoaiTran. Date: 26-Oct-2016
@@ -119,7 +117,21 @@ public class Keyword {
             ExecuteTestcase.bResult = false;
         }
     }
-    public static void waitandPause(String object,String data) throws InterruptedException {
+    public static void clickElementByLinkText(String object, String data){
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        // Des: This function is used to clickElementByLinkText
+        // Created by DoaiTran. 26-Oct-2016
+        // Updated by: DoaiTran 27-Oct-2016
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        try {
+            Log.info("Clicking on WebElement ByLinkText "+ object);
+            DRIVER.findElement(By.linkText(OR.getProperty(object))).click();
+        }catch (Exception e){
+            Log.info("Not able to click on Element --- "+ e.getMessage());
+            ExecuteTestcase.bResult = false;
+        }
+    }
+    public static void waitAndPause(String object,String data) throws InterruptedException {
         ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
         // Des: This function is used to pause all actions with time (MilSecond).
         // Created by DoaiTran. On: 26-Oct-2016
@@ -136,7 +148,7 @@ public class Keyword {
             ExecuteTestcase.bResult = false;
         }
     }
-    public static void input(String object, String data){
+    public static void inputValue(String object, String data){
         ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
         // Des: This function is used to clear and input data to text box.
         // Created by DoaiTran. On: 07-Nov-2016
@@ -185,7 +197,7 @@ public class Keyword {
             ExecuteTestcase.bResult =false;
         }
     }
-    public static void navigatetoBack(String object, String data){
+    public static void navigateToBack(String object, String data){
         ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
         // Des: This function is used to navigate to Back page
         // Created by DoaiTran. On: 13-Nov-2016
@@ -195,6 +207,7 @@ public class Keyword {
         try{
             Log.info("Navifate to back page");
             DRIVER.navigate().back();
+            Thread.sleep(5000);
         }catch (Exception e){
             Log.info("Not able to NavigatetoBack");
             ExecuteTestcase.bResult = false;
@@ -215,7 +228,7 @@ public class Keyword {
             ExecuteTestcase.bResult = false;
         }
     }
-    public static void  refreshPage(String object, String data){
+    public static void refreshPage(String object, String data){
         ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
         // Des: This function is used to refresh page
         // Created by DoaiTran. On: 13-Nov-2016
@@ -230,6 +243,59 @@ public class Keyword {
             ExecuteTestcase.bResult = false;
         }
     }
+    public static void  movetoElement(String object, String data){
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        // Des: This function is used to movetoElement
+        // Created by DoaiTran. On: 13-Nov-2016
+        // Updated :
+        // Status:
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////
+        try{
+            Log.info("Hover to element and click");
+            Actions actions = new Actions(DRIVER);
+            WebElement Element = DRIVER.findElement(By.xpath(OR.getProperty(object)));
+            actions.moveToElement(Element).perform();
+        }catch (Exception e){
+            Log.info("Not able to movetoElement");
+            ExecuteTestcase.bResult = false;
+        }
+    }
+    public static void doubleClick(String object, String data){
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        // Des: This function is used to doubleClick
+        // Created by DoaiTran. On: 13-Nov-2016
+        // Updated :
+        // Status:
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////
+        try{
+            Log.info("doubleClick on Element: " + data);
+            Actions actions = new Actions(DRIVER);
+            WebElement Element = DRIVER.findElement(By.xpath(OR.getProperty(object)));
+            actions.doubleClick().perform();
+        }catch (Exception e){
+            Log.info("Not able to doubleClick on Element: " + data);
+            ExecuteTestcase.bResult = false;
+        }
+    }
+    public static void  waitForElementPresent(String object, String data){
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        // Des: This function is used to waitForElementPresent
+        // Created by DoaiTran. On: 13-Nov-2016
+        // Updated :
+        // Status:
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////
+        try{
+            WebDriverWait wait = new WebDriverWait(DRIVER, 15);
+            wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(OR.getProperty(object))));
+        }catch (Exception e){
+            Log.info("Not able to doubleClick on Element: ");
+            ExecuteTestcase.bResult = false;
+        }
+    }
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //  Exception handling
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     public static void getscreenshot() throws Exception {
         ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
         // Created by DoaiTran. On : 26-Oct-2016

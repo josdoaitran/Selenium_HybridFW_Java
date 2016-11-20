@@ -1,6 +1,21 @@
-# Home Page
-link_StrategicDecision =.//*[@id='content']/div[3]/div[1]/div/div/div/p[2]/span/a[1]
+#############################################################################################
+#   We can define all Object repositories for project.                                      #
+#   Object names should be all Upper case ASCII letters with format as example:             #
+#       CheckBox:  CHK_NAME	                       Text/TextBox: TXT_Name                   #
+#       ComboBox: MCB_NAME                         ListView: LST_NAME                       #
+#       RadioButton: RDB_NAME                      Table: TBL_NAME                          #
+#       Menu Bar:    WMB_NAME                      Button: BTN_NAME                         #
+#       ContextMenu:  CONTEXT_NAME                 Tab: TAB_NAME                            #
+#       ListBox:   LSTBOX_NAME		               Tree: TREE_NAME                          #
+#       Lable:  LBL_NAME                                                                    #
+#############################################################################################
 
-# Practiceform page
-textbox=.//*[@id='vfb-9']
-textbox_email=.//*[@id='text-11']/div/form/p[2]/input
+# Home Page
+TXT_STRATEGICDECISION = .//*[@id='content']/div[3]/div[1]/div/div/div/p[2]/span/a[1]
+LBL_BASICTUTORIAL = .//*[@id='content']/div[10]//span/a[@href ='http://www.seleniumframework.com/python-basic/what-is-python/']
+TXT_LEADERSHIP = .//*[@id='content']/div[3]/div[1]/div/div/div/p[1]/span/strong/span
+# PracticeForm page
+TXT_BOX = .//*[@id='vfb-9']
+TXT_TEXTAREA =.//*[@id='vfb-10']
+TXT_EMAIL = .//*[@id='text-11']/div/form/p[2]/input
+CHK_OPTION1 = .//*[@id='vfb-6-0']
