@@ -244,7 +244,7 @@ public class Keyword {
             ExecuteTestcase.bResult = false;
         }
     }
-    public static void  movetoElement(String object, String data){
+    public static void  moveToElement(String object, String data){
         ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
         // Des: This function is used to movetoElement
         // Created by DoaiTran. On: 13-Nov-2016
@@ -459,6 +459,22 @@ public class Keyword {
             ExecuteTestcase.bResult = false;
         }
     }
+    public static void  switchToIFrameWithID(String object, String data){
+        try{
+            Log.info("To switch to iFrame with iFrameID");
+            List<WebElement> iframes = DRIVER.findElements(By.id("iframe"));
+            for (WebElement iframe : iframes) {
+                System.out.println(iframe);
+                if(iframe.getAttribute("id").equals(data)){
+                    DRIVER.switchTo().frame(data);
+                    break;
+                }
+            }
+        }catch (Exception e){
+            Log.info("Unable to switch to iFrame with iFrame ID");
+            ExecuteTestcase.bResult = false;
+        }
+    }
     public static void switchToMainPage(String object, String data){
         //***************************************************
         //**  Desc: this function use to switch frame to main page.
@@ -474,6 +490,13 @@ public class Keyword {
         }catch (Exception e){
             Log.info("Unable to switch to Main Page");
             ExecuteTestcase.bResult = false;
+        }
+    }
+    public static void  verifyTextInTable(String object, String data){
+        try{
+
+        }catch (Exception e){
+
         }
     }
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

@@ -1,135 +1,99 @@
-2016-11-21 15:01:44,118 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
-2016-11-21 15:01:44,119 INFO  [Log] **************************************************************************************** 
-2016-11-21 15:01:44,119 INFO  [Log] **************************************************************************************** 
-2016-11-21 15:01:44,119 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TestCase4       $$$$$$$$$$$$$$$$$$$$$$$$$ 
-2016-11-21 15:01:44,119 INFO  [Log] **************************************************************************************** 
-2016-11-21 15:01:44,119 INFO  [Log] **************************************************************************************** 
-2016-11-21 15:01:44,120 INFO  [Log] Opening Browser 
-2016-11-21 15:01:50,364 INFO  [Log] Navigating to specify URL 
-2016-11-21 15:01:58,230 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
-2016-11-21 15:01:58,230 INFO  [Log] To switch to iFrame with name 
-2016-11-21 15:01:58,341 INFO  [Log] We are in iFrame: iframe1 
-2016-11-21 15:01:59,906 INFO  [Log] Closing the browser 
-2016-11-21 15:02:01,127 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
-2016-11-21 15:02:01,127 INFO  [Log] X 
-2016-11-21 15:02:01,127 INFO  [Log] X 
-2016-11-21 15:02:01,127 INFO  [Log] X 
-2016-11-21 15:02:01,127 INFO  [Log] X 
-2016-11-21 15:02:01,127 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
-2016-11-21 15:02:01,127 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
-2016-11-21 15:06:28,102 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
-2016-11-21 15:06:28,103 INFO  [Log] **************************************************************************************** 
-2016-11-21 15:06:28,103 INFO  [Log] **************************************************************************************** 
-2016-11-21 15:06:28,103 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TestCase4       $$$$$$$$$$$$$$$$$$$$$$$$$ 
-2016-11-21 15:06:28,103 INFO  [Log] **************************************************************************************** 
-2016-11-21 15:06:28,103 INFO  [Log] **************************************************************************************** 
-2016-11-21 15:06:28,105 INFO  [Log] Opening Browser 
-2016-11-21 15:06:34,512 INFO  [Log] Navigating to specify URL 
-2016-11-21 15:06:43,235 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
-2016-11-21 15:06:43,236 INFO  [Log] To switch to iFrame with name 
-2016-11-21 15:06:44,880 INFO  [Log] Closing the browser 
-2016-11-21 15:06:46,281 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
-2016-11-21 15:06:46,281 INFO  [Log] X 
-2016-11-21 15:06:46,281 INFO  [Log] X 
-2016-11-21 15:06:46,281 INFO  [Log] X 
-2016-11-21 15:06:46,281 INFO  [Log] X 
-2016-11-21 15:06:46,282 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
-2016-11-21 15:06:46,282 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
-2016-11-21 15:15:03,088 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
-2016-11-21 15:15:03,088 INFO  [Log] **************************************************************************************** 
-2016-11-21 15:15:03,088 INFO  [Log] **************************************************************************************** 
-2016-11-21 15:15:03,089 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TestCase4       $$$$$$$$$$$$$$$$$$$$$$$$$ 
-2016-11-21 15:15:03,089 INFO  [Log] **************************************************************************************** 
-2016-11-21 15:15:03,089 INFO  [Log] **************************************************************************************** 
-2016-11-21 15:15:03,090 INFO  [Log] Opening Browser 
-2016-11-21 15:15:10,368 INFO  [Log] Navigating to specify URL 
-2016-11-21 15:15:18,006 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
-2016-11-21 15:15:18,007 INFO  [Log] To switch to iFrame with name 
-2016-11-21 15:15:20,267 INFO  [Log] Closing the browser 
-2016-11-21 15:15:21,376 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
-2016-11-21 15:15:21,376 INFO  [Log] X 
-2016-11-21 15:15:21,377 INFO  [Log] X 
-2016-11-21 15:15:21,377 INFO  [Log] X 
-2016-11-21 15:15:21,377 INFO  [Log] X 
-2016-11-21 15:15:21,377 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
-2016-11-21 15:15:21,377 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
-2016-11-21 15:17:29,821 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
-2016-11-21 15:17:29,821 INFO  [Log] **************************************************************************************** 
-2016-11-21 15:17:29,821 INFO  [Log] **************************************************************************************** 
-2016-11-21 15:17:29,821 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TestCase4       $$$$$$$$$$$$$$$$$$$$$$$$$ 
-2016-11-21 15:17:29,821 INFO  [Log] **************************************************************************************** 
-2016-11-21 15:17:29,821 INFO  [Log] **************************************************************************************** 
-2016-11-21 15:17:29,822 INFO  [Log] Opening Browser 
-2016-11-21 15:17:37,400 INFO  [Log] Navigating to specify URL 
-2016-11-21 15:17:45,706 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
-2016-11-21 15:17:45,706 INFO  [Log] To switch to iFrame with name 
-2016-11-21 15:17:47,534 INFO  [Log] Closing the browser 
-2016-11-21 15:17:48,858 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
-2016-11-21 15:17:48,858 INFO  [Log] X 
-2016-11-21 15:17:48,858 INFO  [Log] X 
-2016-11-21 15:17:48,858 INFO  [Log] X 
-2016-11-21 15:17:48,858 INFO  [Log] X 
-2016-11-21 15:17:48,859 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
-2016-11-21 15:17:48,859 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
-2016-11-21 15:25:44,136 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
-2016-11-21 15:25:44,136 INFO  [Log] **************************************************************************************** 
-2016-11-21 15:25:44,136 INFO  [Log] **************************************************************************************** 
-2016-11-21 15:25:44,137 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TestCase4       $$$$$$$$$$$$$$$$$$$$$$$$$ 
-2016-11-21 15:25:44,137 INFO  [Log] **************************************************************************************** 
-2016-11-21 15:25:44,137 INFO  [Log] **************************************************************************************** 
-2016-11-21 15:25:44,139 INFO  [Log] Opening Browser 
-2016-11-21 15:25:51,012 INFO  [Log] Navigating to specify URL 
-2016-11-21 15:25:58,156 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
-2016-11-21 15:25:58,156 INFO  [Log] To switch to iFrame with name 
-2016-11-21 15:25:59,816 INFO  [Log] Closing the browser 
-2016-11-21 15:26:01,308 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
-2016-11-21 15:26:01,308 INFO  [Log] X 
-2016-11-21 15:26:01,308 INFO  [Log] X 
-2016-11-21 15:26:01,308 INFO  [Log] X 
-2016-11-21 15:26:01,309 INFO  [Log] X 
-2016-11-21 15:26:01,310 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
-2016-11-21 15:26:01,310 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
-2016-11-21 15:28:17,072 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
-2016-11-21 15:28:17,073 INFO  [Log] **************************************************************************************** 
-2016-11-21 15:28:17,073 INFO  [Log] **************************************************************************************** 
-2016-11-21 15:28:17,073 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TestCase4       $$$$$$$$$$$$$$$$$$$$$$$$$ 
-2016-11-21 15:28:17,073 INFO  [Log] **************************************************************************************** 
-2016-11-21 15:28:17,073 INFO  [Log] **************************************************************************************** 
-2016-11-21 15:28:17,075 INFO  [Log] Opening Browser 
-2016-11-21 15:28:24,892 INFO  [Log] Navigating to specify URL 
-2016-11-21 15:28:32,964 INFO  [Log] To switch to iFrame with name 
-2016-11-21 15:28:33,255 INFO  [Log] To switch to Main Page 
-2016-11-21 15:28:33,416 INFO  [Log] Closing the browser 
-2016-11-21 15:28:34,827 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
-2016-11-21 15:28:34,827 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
-2016-11-21 15:28:34,828 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
-2016-11-21 15:28:34,828 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
-2016-11-21 15:28:34,957 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
-2016-11-21 15:28:34,957 INFO  [Log] X 
-2016-11-21 15:28:34,957 INFO  [Log] X 
-2016-11-21 15:28:34,957 INFO  [Log] X 
-2016-11-21 15:28:34,957 INFO  [Log] X 
-2016-11-21 15:28:34,958 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
-2016-11-21 15:28:34,958 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
-2016-11-21 15:30:47,606 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
-2016-11-21 15:30:47,607 INFO  [Log] **************************************************************************************** 
-2016-11-21 15:30:47,607 INFO  [Log] **************************************************************************************** 
-2016-11-21 15:30:47,607 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TestCase4       $$$$$$$$$$$$$$$$$$$$$$$$$ 
-2016-11-21 15:30:47,607 INFO  [Log] **************************************************************************************** 
-2016-11-21 15:30:47,607 INFO  [Log] **************************************************************************************** 
-2016-11-21 15:30:47,609 INFO  [Log] Opening Browser 
-2016-11-21 15:30:54,094 INFO  [Log] Navigating to specify URL 
-2016-11-21 15:31:01,563 INFO  [Log] To switch to iFrame with name 
-2016-11-21 15:31:02,482 INFO  [Log] To switch to Main Page 
-2016-11-21 15:31:02,740 INFO  [Log] Closing the browser 
-2016-11-21 15:31:04,609 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
-2016-11-21 15:31:04,609 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
-2016-11-21 15:31:04,609 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
-2016-11-21 15:31:04,609 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
-2016-11-21 15:31:04,741 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
-2016-11-21 15:31:04,741 INFO  [Log] X 
-2016-11-21 15:31:04,741 INFO  [Log] X 
-2016-11-21 15:31:04,741 INFO  [Log] X 
-2016-11-21 15:31:04,741 INFO  [Log] X 
-2016-11-21 15:31:04,742 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
-2016-11-21 15:31:04,742 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-21 17:31:50,710 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-21 17:31:50,711 INFO  [Log] **************************************************************************************** 
+2016-11-21 17:31:50,711 INFO  [Log] **************************************************************************************** 
+2016-11-21 17:31:50,711 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TestCase3       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-11-21 17:31:50,711 INFO  [Log] **************************************************************************************** 
+2016-11-21 17:31:50,711 INFO  [Log] **************************************************************************************** 
+2016-11-21 17:31:50,714 INFO  [Log] Opening Browser 
+2016-11-21 17:31:57,532 INFO  [Log] Navigating to specify URL 
+2016-11-21 17:32:03,147 INFO  [Log] Input value TXT_EMAIL with data: doai.tran@seldatinc.com 
+2016-11-21 17:32:03,729 INFO  [Log] Wait for element present 
+2016-11-21 17:32:04,570 INFO  [Log] Clicking on WebElement WMB_TUTORIALS 
+2016-11-21 17:32:04,969 INFO  [Log] Clicking on WebElement WMB_STRATEGICDECISION 
+2016-11-21 17:32:05,168 INFO  [Log] Wait for 5 seconds 
+2016-11-21 17:32:10,255 INFO  [Log] Closing the browser 
+2016-11-21 17:32:11,284 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-21 17:32:11,285 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-21 17:32:11,285 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-21 17:32:11,285 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-21 17:32:11,355 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-11-21 17:32:11,356 INFO  [Log] X 
+2016-11-21 17:32:11,356 INFO  [Log] X 
+2016-11-21 17:32:11,356 INFO  [Log] X 
+2016-11-21 17:32:11,356 INFO  [Log] X 
+2016-11-21 17:32:11,372 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-21 17:32:11,372 INFO  [Log] **************************************************************************************** 
+2016-11-21 17:32:11,372 INFO  [Log] **************************************************************************************** 
+2016-11-21 17:32:11,372 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TestCase4       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-11-21 17:32:11,372 INFO  [Log] **************************************************************************************** 
+2016-11-21 17:32:11,372 INFO  [Log] **************************************************************************************** 
+2016-11-21 17:32:11,372 INFO  [Log] Opening Browser 
+2016-11-21 17:32:18,306 INFO  [Log] Navigating to specify URL 
+2016-11-21 17:32:27,349 INFO  [Log] Wait for 5 seconds 
+2016-11-21 17:32:32,434 INFO  [Log] To switch to iFrame with name 
+2016-11-21 17:32:32,603 INFO  [Log] To switch to Main Page 
+2016-11-21 17:32:32,675 INFO  [Log] Wait for 5 seconds 
+2016-11-21 17:32:37,776 INFO  [Log] To switch to iFrame with iFrameID 
+2016-11-21 17:32:47,867 INFO  [Log] To switch to Main Page 
+2016-11-21 17:32:47,932 INFO  [Log] Closing the browser 
+2016-11-21 17:32:48,768 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-21 17:32:48,768 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-21 17:32:48,768 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-21 17:32:48,768 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-21 17:32:48,827 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-11-21 17:32:48,827 INFO  [Log] X 
+2016-11-21 17:32:48,827 INFO  [Log] X 
+2016-11-21 17:32:48,827 INFO  [Log] X 
+2016-11-21 17:32:48,827 INFO  [Log] X 
+2016-11-21 17:32:48,828 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-21 17:32:48,828 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-21 17:45:47,715 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-21 17:45:47,715 INFO  [Log] **************************************************************************************** 
+2016-11-21 17:45:47,715 INFO  [Log] **************************************************************************************** 
+2016-11-21 17:45:47,715 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TestCase3       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-11-21 17:45:47,715 INFO  [Log] **************************************************************************************** 
+2016-11-21 17:45:47,715 INFO  [Log] **************************************************************************************** 
+2016-11-21 17:45:47,717 INFO  [Log] Opening Browser 
+2016-11-21 17:45:57,050 INFO  [Log] Navigating to specify URL 
+2016-11-21 17:46:03,905 INFO  [Log] Input value TXT_EMAIL with data: doai.tran@seldatinc.com 
+2016-11-21 17:46:04,276 INFO  [Log] Wait for element present 
+2016-11-21 17:46:04,820 INFO  [Log] Hover to element and click 
+2016-11-21 17:46:05,065 INFO  [Log] Clicking on WebElement WMB_TUTORIALS 
+2016-11-21 17:46:05,360 INFO  [Log] Clicking on WebElement WMB_STRATEGICDECISION 
+2016-11-21 17:46:05,596 INFO  [Log] Wait for 5 seconds 
+2016-11-21 17:46:10,677 INFO  [Log] Closing the browser 
+2016-11-21 17:46:11,627 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-21 17:46:11,628 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-21 17:46:11,628 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-21 17:46:11,628 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-21 17:46:11,704 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-11-21 17:46:11,704 INFO  [Log] X 
+2016-11-21 17:46:11,704 INFO  [Log] X 
+2016-11-21 17:46:11,704 INFO  [Log] X 
+2016-11-21 17:46:11,704 INFO  [Log] X 
+2016-11-21 17:46:11,704 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-21 17:46:11,704 INFO  [Log] **************************************************************************************** 
+2016-11-21 17:46:11,704 INFO  [Log] **************************************************************************************** 
+2016-11-21 17:46:11,704 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TestCase4       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-11-21 17:46:11,704 INFO  [Log] **************************************************************************************** 
+2016-11-21 17:46:11,704 INFO  [Log] **************************************************************************************** 
+2016-11-21 17:46:11,705 INFO  [Log] Opening Browser 
+2016-11-21 17:46:16,808 INFO  [Log] Navigating to specify URL 
+2016-11-21 17:46:24,255 INFO  [Log] Wait for 5 seconds 
+2016-11-21 17:46:29,322 INFO  [Log] To switch to iFrame with name 
+2016-11-21 17:46:29,472 INFO  [Log] To switch to Main Page 
+2016-11-21 17:46:29,562 INFO  [Log] Wait for 5 seconds 
+2016-11-21 17:46:34,624 INFO  [Log] To switch to iFrame with iFrameID 
+2016-11-21 17:46:44,700 INFO  [Log] To switch to Main Page 
+2016-11-21 17:46:44,774 INFO  [Log] Closing the browser 
+2016-11-21 17:46:45,501 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-21 17:46:45,501 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-21 17:46:45,501 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-21 17:46:45,501 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-21 17:46:45,561 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-11-21 17:46:45,561 INFO  [Log] X 
+2016-11-21 17:46:45,561 INFO  [Log] X 
+2016-11-21 17:46:45,561 INFO  [Log] X 
+2016-11-21 17:46:45,561 INFO  [Log] X 
+2016-11-21 17:46:45,563 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-21 17:46:45,564 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 

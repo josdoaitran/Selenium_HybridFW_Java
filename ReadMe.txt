@@ -23,7 +23,8 @@ Support:
     - verifyElementIsExisted                    - verifyText
     - closeAllBrowsers                          - waitForAjax
     - selectByVisibleText                       - selectByValue
-    - selectByIndex
+    - selectByIndex                             - switchToIFrameWithID
+    - switchToIFrameWithName                    - switchToMainPage
 ======================================= Exception Handling =============================================
 Getscreenshot
     + To take screenshots for failed steps on a test cases.

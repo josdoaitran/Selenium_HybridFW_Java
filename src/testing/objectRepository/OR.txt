@@ -16,6 +16,8 @@ LBL_BASICTUTORIAL = .//*[@id='content']/div[10]//span/a[@href ='http://www.selen
 TXT_LEADERSHIP = .//*[@id='content']/div[3]/div[1]/div/div/div/p[1]/span/strong/span
 TXT_AGILETESTING = .//*[@id='content']/div[1]//h2/span/strong
 # PracticeForm page
+WMB_TUTORIALS = .//*[@id='main-nav']/li[2]/a/span
+WMB_STRATEGICDECISION =.//*[@id='main-nav']/li[2]/ul/li[1]/a/span
 TXT_BOX = .//*[@id='vfb-9']
 TXT_TEXTAREA =.//*[@id='vfb-10']
 TXT_EMAIL = .//*[@id='text-11']/div/form/p[2]/input
