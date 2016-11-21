@@ -1,9 +1,7 @@
 package support;
 
 import config.Constants;
-import org.apache.commons.io.FileUtils;
 
-import java.io.File;
 import java.lang.reflect.Method;
 
 
@@ -52,8 +50,8 @@ public class ExecuteTestcase {
                 SheetName = sTestCaseID;
                 iTestStep = ReadWriteExcel.getRowContains(sTestCaseID, Constants.Col_TestCaseID, SheetName);
                 iTestLastStep = ReadWriteExcel.getTestStepsCount(SheetName, sTestCaseID, iTestStep);
-                System.out.println(iTestStep);
-                System.out.println(iTestLastStep);
+                //System.out.println(iTestStep);
+                //System.out.println(iTestLastStep);
                 Log.startTestCase(sTestCaseID);
                 bResult = true;
                 for (; iTestStep <= iTestLastStep; iTestStep++) {
@@ -89,7 +87,6 @@ public class ExecuteTestcase {
             if(method[i].getName().equals(sActionKeyword)){
                 method[i].invoke(actionKeywords,sPageObject,sData);
                 //This code block will execute after every test step
-                System.out.println(bResult);
                 if(bResult==true){
                     //If the executed test step value is true, Pass the test step in Excel sheet
                     ReadWriteExcel.setCellData(Constants.KEYWORD_PASS, iTestStep, Constants.Col_TestStepResult, SheetName, TestReport);

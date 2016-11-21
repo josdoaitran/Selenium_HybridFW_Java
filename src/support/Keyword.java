@@ -7,18 +7,19 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.Calendar;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-import static executionEngine.Controller.*;
-import static support.ExecuteTestcase.TestStepName;
-import static support.ExecuteTestcase.sTestCaseID;
-import static support.ExecuteTestcase.testsuiteName;
+import static executionEngine.Controller.OR;
+import static support.ExecuteTestcase.*;
 
 
 /**
@@ -187,7 +188,7 @@ public class Keyword {
         // Created by DoaiTran. On: 13-Nov-2016
         // Updated :
         // Status:
-        ///////////////////////////////////////////////////////////////////////////////////////////////////////
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
         try{
             Log.info("Submit the button");
             WebDriverWait wait = new WebDriverWait(DRIVER, 15);
@@ -203,7 +204,7 @@ public class Keyword {
         // Created by DoaiTran. On: 13-Nov-2016
         // Updated :
         // Status:
-        ///////////////////////////////////////////////////////////////////////////////////////////////////////
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
         try{
             Log.info("Navifate to back page");
             DRIVER.navigate().back();
@@ -219,7 +220,7 @@ public class Keyword {
         // Created by DoaiTran. On: 13-Nov-2016
         // Updated :
         // Status:
-        ///////////////////////////////////////////////////////////////////////////////////////////////////////
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
         try{
             Log.info("Navigate to Forward page");
             DRIVER.navigate().forward();
@@ -234,7 +235,7 @@ public class Keyword {
         // Created by DoaiTran. On: 13-Nov-2016
         // Updated :
         // Status:
-        ///////////////////////////////////////////////////////////////////////////////////////////////////////
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
         try{
             Log.info("Refresh page");
             DRIVER.navigate().refresh();
@@ -249,7 +250,7 @@ public class Keyword {
         // Created by DoaiTran. On: 13-Nov-2016
         // Updated :
         // Status:
-        ///////////////////////////////////////////////////////////////////////////////////////////////////////
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
         try{
             Log.info("Hover to element and click");
             Actions actions = new Actions(DRIVER);
@@ -263,12 +264,12 @@ public class Keyword {
     public static void doubleClick(String object, String data){
         ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
         // Des: This function is used to doubleClick
-        // Created by DoaiTran. On: 13-Nov-2016
-        // Updated :
+        // Created by DoaiTran. On: 20-Nov-2016
+        // Updated :            Date:
         // Status:
-        ///////////////////////////////////////////////////////////////////////////////////////////////////////
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
         try{
-            Log.info("doubleClick on Element: " + data);
+            Log.info("DoubleClick on Element: " + data);
             Actions actions = new Actions(DRIVER);
             WebElement Element = DRIVER.findElement(By.xpath(OR.getProperty(object)));
             actions.doubleClick().perform();
@@ -280,15 +281,198 @@ public class Keyword {
     public static void  waitForElementPresent(String object, String data){
         ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
         // Des: This function is used to waitForElementPresent
-        // Created by DoaiTran. On: 13-Nov-2016
+        // Created by DoaiTran. On: 20-Nov-2016
         // Updated :
-        // Status:
-        ///////////////////////////////////////////////////////////////////////////////////////////////////////
+        // Status: Passed
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
         try{
+            Log.info("Wait for element present");
+            WebDriverWait wait = new WebDriverWait(DRIVER, 15);
+            wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(OR.getProperty(object))));
+        }catch (Exception e){
+            Log.info("Element is not presented");
+            ExecuteTestcase.bResult = false;
+        }
+    }
+    public static void verifyElementIsExisted(String object, String data){
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        // Des: This function is used to Verify element is existedt
+        // Created by DoaiTran. On: 20-Nov-2016
+        // Updated :
+        // Status: Passed
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        try{
+            Log.info("Verify Element is existed.");
             WebDriverWait wait = new WebDriverWait(DRIVER, 15);
             wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(OR.getProperty(object))));
+        }catch (Exception e) {
+            Log.info("Element is not existed.");
+            ExecuteTestcase.bResult = false;
+        }
+    }
+    public static void verifyText(String object, String data){
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        // Des: This function is used to verify actual text and expected text.
+        // Created by DoaiTran. On: 21-Nov-2016
+        // Updated :
+        // Status: Passed
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        try{
+            Log.info("verify text between get from element and expected text: "+ data);
+            String actualText = DRIVER.findElement(By.xpath(OR.getProperty(object))).getText();
+            if(actualText.equals(data)){
+                ExecuteTestcase.bResult = true;
+                Log.info("Expected text and actual text are the same.");
+            }else {
+                ExecuteTestcase.bResult = false;
+                Log.info("Actual text and expected text are different.");
+            }
+        }catch(Exception e){
+            Log.info("Not able to verify text.");
+            ExecuteTestcase.bResult = false;
+        }
+    }
+    public static void closeAllBrowsers(String object, String data){
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        // Des: This function is used to kill all browser processes.
+        // Created by DoaiTran. On: 21-Nov-2016
+        // Updated :
+        // Status:
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        try{
+            Log.info("Try to kill all browser processes.");
+            taskkill("Chrome");
+            taskkill("IE");
+            taskkill("FF");
         }catch (Exception e){
-            Log.info("Not able to doubleClick on Element: ");
+            Log.info("Not able to kill all processes.");
+            ExecuteTestcase.bResult = false;
+        }
+    }
+    // Support: https://technet.microsoft.com/en-us/library/bb491009.aspx
+    private static void taskkill(String strProcessName){
+        String strCmdLine = null;
+        //Runtime rt = Runtime.getRuntime();
+        switch (strProcessName){
+            case "Chrome" : strCmdLine = String.format("taskkill /im chrome.exe /f /t >nul 2>&1"); break;
+            case "IE" :     strCmdLine = String.format("taskkill /im iexplore.exe /f /t >nul 2>&1"); break;
+            case "FF":      strCmdLine = String.format("taskkill /im firefox.exe /f /t >nul 2>&1"); break;
+        }
+        try {
+            Runtime.getRuntime().exec(strCmdLine);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+    public static void waitForAjax(String object, String data){
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        // Des: This function is used to waitForAjax.
+        // Created by DoaiTran. On: 21-Nov-2016
+        // Updated :
+        // Status:
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        try {
+            Log.info("Wait for Ajax script be executed.");
+            new WebDriverWait(DRIVER, 180).until(new ExpectedCondition<Boolean>()
+            {
+                public Boolean apply(WebDriver driver) {
+                    JavascriptExecutor js = (JavascriptExecutor) driver;
+                    return (Boolean)js.executeScript("return jQuery.active == 0");
+                }
+            });
+        }catch (Exception e){
+            Log.info("Error Ajax script waiting.");
+            ExecuteTestcase.bResult = false;
+        }
+    }
+    public static void selectByVisibleText(String object, String data){
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        // Des: This function is used to select By Visible Text
+        // Created by DoaiTran. On: 21-Nov-2016
+        // Updated :
+        // Status: Passed
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        try{
+            Log.info("Try to select by visible text.");
+            Select selectAction =  new Select(DRIVER.findElement(By.xpath(OR.getProperty(object))));
+            selectAction.selectByVisibleText(data);
+        }catch (Exception e){
+            Log.info("Unable to select by visible text.");
+            ExecuteTestcase.bResult = false;
+        }
+    }
+    public static void selectByValue(String object, String data){
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        // Des: This function is used to select By Value
+        // Created by DoaiTran. On: 21-Nov-2016
+        // Updated :
+        // Status: Passed
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        try{
+            Log.info("Try to select by value.");
+            Select selectAction =  new Select(DRIVER.findElement(By.xpath(OR.getProperty(object))));
+            selectAction.selectByValue(data);
+        }catch (Exception e){
+            Log.info("Unable to select by value.");
+            ExecuteTestcase.bResult = false;
+        }
+    }
+    public static void selectByIndex(String object, int data){
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        // Des: This function is used to select By Index
+        // Created by DoaiTran. On: 21-Nov-2016
+        // Updated :
+        // Status: Passed
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        try{
+            Log.info("Try to select by index.");
+            Select selectAction =  new Select(DRIVER.findElement(By.xpath(OR.getProperty(object))));
+            selectAction.selectByIndex(data);
+        }catch (Exception e){
+            Log.info("Unable to select by index.");
+            ExecuteTestcase.bResult = false;
+        }
+    }
+    public static void  switchToIFrameWithName(String object, String data){
+        //***************************************************
+        //**  Desc: this function use to switch frame on page. It's used before hover_on_menu, and click_element functions
+        //**        Three functions use to click on submenu on page
+        //**  Currently, "switch_to.frame(str_frame_name)" work well on latest IE and chrome. Not work on new FF version (Verified:NOT YET)
+        //**  On FF should add more wait time.
+        //**  Created By: DoaiTran
+        //**  Created Date: 21-Nov-2016
+        //**  Modification History:
+        //**         Modify by:            Date:       Note:
+        //****************************************************
+        try{
+            Log.info("To switch to iFrame with name");
+            List<WebElement> iframes = DRIVER.findElements(By.tagName("iframe")); // (By.xpath("//iframe"));
+            for (WebElement iframe : iframes) {
+                System.out.println(iframe);
+                if(iframe.getAttribute("name").equals(data)){
+                    DRIVER.switchTo().frame(data);
+                    break;
+                }
+            }
+        }catch (Exception e){
+            Log.info("Unable to switch to iFrame with name");
+            ExecuteTestcase.bResult = false;
+        }
+    }
+    public static void switchToMainPage(String object, String data){
+        //***************************************************
+        //**  Desc: this function use to switch frame to main page.
+        //**  Currently, "switch_to.frame(str_frame_name)" work well on latest IE and chrome. Not work on new FF version (Verified:NOT YET)
+        //**  Created By: DoaiTran
+        //**  Created Date: 21-Nov-2016
+        //**  Modification History:
+        //**         Modify by:            Date:       Note:
+        //****************************************************
+        try{
+            Log.info("To switch to Main Page");
+            DRIVER.switchTo().defaultContent();
+        }catch (Exception e){
+            Log.info("Unable to switch to Main Page");
             ExecuteTestcase.bResult = false;
         }
     }

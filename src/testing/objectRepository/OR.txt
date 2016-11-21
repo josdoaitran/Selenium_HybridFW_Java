@@ -14,6 +14,7 @@
 TXT_STRATEGICDECISION = .//*[@id='content']/div[3]/div[1]/div/div/div/p[2]/span/a[1]
 LBL_BASICTUTORIAL = .//*[@id='content']/div[10]//span/a[@href ='http://www.seleniumframework.com/python-basic/what-is-python/']
 TXT_LEADERSHIP = .//*[@id='content']/div[3]/div[1]/div/div/div/p[1]/span/strong/span
+TXT_AGILETESTING = .//*[@id='content']/div[1]//h2/span/strong
 # PracticeForm page
 TXT_BOX = .//*[@id='vfb-9']
 TXT_TEXTAREA =.//*[@id='vfb-10']
