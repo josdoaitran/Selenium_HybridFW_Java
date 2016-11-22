@@ -22,3 +22,11 @@ TXT_BOX = .//*[@id='vfb-9']
 TXT_TEXTAREA =.//*[@id='vfb-10']
 TXT_EMAIL = .//*[@id='text-11']/div/form/p[2]/input
 CHK_OPTION1 = .//*[@id='vfb-6-0']
+LST_OPTION = .//*[@id='vfb-12']
+LBL_OPTION1 = .//*[@id='item-vfb-7']/div/span[1]/label
+TEXT_DATE = .//*[@id='vfb-8']
+BTN_ADDMONTH = .//*[@id='ui-datepicker-div']/div/a[2]/span
+BTN_SWBMONTH = .//*[@id='ui-datepicker-div']/div/a[1]/span
+TBL_DAY22 = .//*[@id='ui-datepicker-div']/table/tbody/tr[4]/td[2]/a
+TXT_URL = .//*[@id='vfb-11']
+TEXT_URLERROR = .//*[@id='item-vfb-11']/label[2]

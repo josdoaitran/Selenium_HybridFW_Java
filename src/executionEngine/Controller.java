@@ -1,16 +1,10 @@
 package executionEngine;
 
 import config.Constants;
-import org.apache.commons.io.FileUtils;
 import org.apache.log4j.xml.DOMConfigurator;
 import support.ExecuteTestcase;
-import support.Keyword;
-import support.Log;
-import support.ReadWriteExcel;
 
-import java.io.File;
 import java.io.FileInputStream;
-import java.lang.reflect.Method;
 import java.util.Properties;
 /**
  * Desc: This function is to set the control / Driver Script

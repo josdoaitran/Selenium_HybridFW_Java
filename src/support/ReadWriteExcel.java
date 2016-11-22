@@ -1,13 +1,8 @@
 package support;
 
 import config.Constants;
-import executionEngine.Controller;
-import org.apache.poi.xssf.usermodel.XSSFCell;
-import org.apache.poi.xssf.usermodel.XSSFRow;
-import org.apache.poi.xssf.usermodel.XSSFSheet;
-import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.apache.poi.xssf.usermodel.*;
 
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 
@@ -129,13 +124,15 @@ public class ReadWriteExcel {
         try{
             ExcelWSheet = ExcelWBook.getSheet(SheetName);
             Row  = ExcelWSheet.getRow(RowNum);
-            Cell = Row.getCell(ColNum, Row.RETURN_BLANK_AS_NULL);
+            //Cell = Row.getCell(ColNum, Row.RETURN_BLANK_AS_NULL);
+            Cell = Row.getCell(ColNum);
             if (Cell == null) {
                 Cell = Row.createCell(ColNum);
                 Cell.setCellValue(Result);
             } else {
                 Cell.setCellValue(Result);
             }
+            //Cell.setCellValue(Result);
             // Constant variables Test Data path and Test Data file name
             FileOutputStream fileOut = new FileOutputStream(ExcelSave);
             ExcelWBook.write(fileOut);

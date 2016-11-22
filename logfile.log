@@ -1,99 +1,377 @@
-2016-11-21 17:31:50,710 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
-2016-11-21 17:31:50,711 INFO  [Log] **************************************************************************************** 
-2016-11-21 17:31:50,711 INFO  [Log] **************************************************************************************** 
-2016-11-21 17:31:50,711 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TestCase3       $$$$$$$$$$$$$$$$$$$$$$$$$ 
-2016-11-21 17:31:50,711 INFO  [Log] **************************************************************************************** 
-2016-11-21 17:31:50,711 INFO  [Log] **************************************************************************************** 
-2016-11-21 17:31:50,714 INFO  [Log] Opening Browser 
-2016-11-21 17:31:57,532 INFO  [Log] Navigating to specify URL 
-2016-11-21 17:32:03,147 INFO  [Log] Input value TXT_EMAIL with data: doai.tran@seldatinc.com 
-2016-11-21 17:32:03,729 INFO  [Log] Wait for element present 
-2016-11-21 17:32:04,570 INFO  [Log] Clicking on WebElement WMB_TUTORIALS 
-2016-11-21 17:32:04,969 INFO  [Log] Clicking on WebElement WMB_STRATEGICDECISION 
-2016-11-21 17:32:05,168 INFO  [Log] Wait for 5 seconds 
-2016-11-21 17:32:10,255 INFO  [Log] Closing the browser 
-2016-11-21 17:32:11,284 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
-2016-11-21 17:32:11,285 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
-2016-11-21 17:32:11,285 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
-2016-11-21 17:32:11,285 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
-2016-11-21 17:32:11,355 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
-2016-11-21 17:32:11,356 INFO  [Log] X 
-2016-11-21 17:32:11,356 INFO  [Log] X 
-2016-11-21 17:32:11,356 INFO  [Log] X 
-2016-11-21 17:32:11,356 INFO  [Log] X 
-2016-11-21 17:32:11,372 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
-2016-11-21 17:32:11,372 INFO  [Log] **************************************************************************************** 
-2016-11-21 17:32:11,372 INFO  [Log] **************************************************************************************** 
-2016-11-21 17:32:11,372 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TestCase4       $$$$$$$$$$$$$$$$$$$$$$$$$ 
-2016-11-21 17:32:11,372 INFO  [Log] **************************************************************************************** 
-2016-11-21 17:32:11,372 INFO  [Log] **************************************************************************************** 
-2016-11-21 17:32:11,372 INFO  [Log] Opening Browser 
-2016-11-21 17:32:18,306 INFO  [Log] Navigating to specify URL 
-2016-11-21 17:32:27,349 INFO  [Log] Wait for 5 seconds 
-2016-11-21 17:32:32,434 INFO  [Log] To switch to iFrame with name 
-2016-11-21 17:32:32,603 INFO  [Log] To switch to Main Page 
-2016-11-21 17:32:32,675 INFO  [Log] Wait for 5 seconds 
-2016-11-21 17:32:37,776 INFO  [Log] To switch to iFrame with iFrameID 
-2016-11-21 17:32:47,867 INFO  [Log] To switch to Main Page 
-2016-11-21 17:32:47,932 INFO  [Log] Closing the browser 
-2016-11-21 17:32:48,768 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
-2016-11-21 17:32:48,768 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
-2016-11-21 17:32:48,768 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
-2016-11-21 17:32:48,768 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
-2016-11-21 17:32:48,827 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
-2016-11-21 17:32:48,827 INFO  [Log] X 
-2016-11-21 17:32:48,827 INFO  [Log] X 
-2016-11-21 17:32:48,827 INFO  [Log] X 
-2016-11-21 17:32:48,827 INFO  [Log] X 
-2016-11-21 17:32:48,828 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
-2016-11-21 17:32:48,828 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
-2016-11-21 17:45:47,715 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
-2016-11-21 17:45:47,715 INFO  [Log] **************************************************************************************** 
-2016-11-21 17:45:47,715 INFO  [Log] **************************************************************************************** 
-2016-11-21 17:45:47,715 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TestCase3       $$$$$$$$$$$$$$$$$$$$$$$$$ 
-2016-11-21 17:45:47,715 INFO  [Log] **************************************************************************************** 
-2016-11-21 17:45:47,715 INFO  [Log] **************************************************************************************** 
-2016-11-21 17:45:47,717 INFO  [Log] Opening Browser 
-2016-11-21 17:45:57,050 INFO  [Log] Navigating to specify URL 
-2016-11-21 17:46:03,905 INFO  [Log] Input value TXT_EMAIL with data: doai.tran@seldatinc.com 
-2016-11-21 17:46:04,276 INFO  [Log] Wait for element present 
-2016-11-21 17:46:04,820 INFO  [Log] Hover to element and click 
-2016-11-21 17:46:05,065 INFO  [Log] Clicking on WebElement WMB_TUTORIALS 
-2016-11-21 17:46:05,360 INFO  [Log] Clicking on WebElement WMB_STRATEGICDECISION 
-2016-11-21 17:46:05,596 INFO  [Log] Wait for 5 seconds 
-2016-11-21 17:46:10,677 INFO  [Log] Closing the browser 
-2016-11-21 17:46:11,627 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
-2016-11-21 17:46:11,628 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
-2016-11-21 17:46:11,628 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
-2016-11-21 17:46:11,628 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
-2016-11-21 17:46:11,704 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
-2016-11-21 17:46:11,704 INFO  [Log] X 
-2016-11-21 17:46:11,704 INFO  [Log] X 
-2016-11-21 17:46:11,704 INFO  [Log] X 
-2016-11-21 17:46:11,704 INFO  [Log] X 
-2016-11-21 17:46:11,704 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
-2016-11-21 17:46:11,704 INFO  [Log] **************************************************************************************** 
-2016-11-21 17:46:11,704 INFO  [Log] **************************************************************************************** 
-2016-11-21 17:46:11,704 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TestCase4       $$$$$$$$$$$$$$$$$$$$$$$$$ 
-2016-11-21 17:46:11,704 INFO  [Log] **************************************************************************************** 
-2016-11-21 17:46:11,704 INFO  [Log] **************************************************************************************** 
-2016-11-21 17:46:11,705 INFO  [Log] Opening Browser 
-2016-11-21 17:46:16,808 INFO  [Log] Navigating to specify URL 
-2016-11-21 17:46:24,255 INFO  [Log] Wait for 5 seconds 
-2016-11-21 17:46:29,322 INFO  [Log] To switch to iFrame with name 
-2016-11-21 17:46:29,472 INFO  [Log] To switch to Main Page 
-2016-11-21 17:46:29,562 INFO  [Log] Wait for 5 seconds 
-2016-11-21 17:46:34,624 INFO  [Log] To switch to iFrame with iFrameID 
-2016-11-21 17:46:44,700 INFO  [Log] To switch to Main Page 
-2016-11-21 17:46:44,774 INFO  [Log] Closing the browser 
-2016-11-21 17:46:45,501 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
-2016-11-21 17:46:45,501 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
-2016-11-21 17:46:45,501 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
-2016-11-21 17:46:45,501 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
-2016-11-21 17:46:45,561 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
-2016-11-21 17:46:45,561 INFO  [Log] X 
-2016-11-21 17:46:45,561 INFO  [Log] X 
-2016-11-21 17:46:45,561 INFO  [Log] X 
-2016-11-21 17:46:45,561 INFO  [Log] X 
-2016-11-21 17:46:45,563 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
-2016-11-21 17:46:45,564 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:35:24,939 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:35:24,940 INFO  [Log] **************************************************************************************** 
+2016-11-22 14:35:24,940 INFO  [Log] **************************************************************************************** 
+2016-11-22 14:35:24,940 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TestCase2       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-11-22 14:35:24,940 INFO  [Log] **************************************************************************************** 
+2016-11-22 14:35:24,940 INFO  [Log] **************************************************************************************** 
+2016-11-22 14:35:24,942 INFO  [Log] Opening Browser 
+2016-11-22 14:35:31,285 INFO  [Log] Navigating to specify URL 
+2016-11-22 14:35:40,129 INFO  [Log] Input value TXT_TEXTAREA with data: We will test with Tiếng Việt value and special key !@#$@#%@%# 
+2016-11-22 14:35:40,989 INFO  [Log] Input value TXT_BOX with data: ABCDEDF GHYUI IOPU 
+2016-11-22 14:35:41,387 INFO  [Log] Clicking on WebElement CHK_OPTION1 
+2016-11-22 14:35:42,306 INFO  [Log] Clicking on WebElement LBL_OPTION1 
+2016-11-22 14:35:42,660 INFO  [Log] Try to select by visible text. 
+2016-11-22 14:35:43,319 INFO  [Log] Try to select by visible text. 
+2016-11-22 14:35:43,663 INFO  [Log] Closing the browser 
+2016-11-22 14:35:44,896 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:35:44,896 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:35:44,896 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:35:44,896 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:35:44,986 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-11-22 14:35:44,986 INFO  [Log] X 
+2016-11-22 14:35:44,986 INFO  [Log] X 
+2016-11-22 14:35:44,986 INFO  [Log] X 
+2016-11-22 14:35:44,986 INFO  [Log] X 
+2016-11-22 14:35:44,987 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:35:44,987 INFO  [Log] **************************************************************************************** 
+2016-11-22 14:35:44,987 INFO  [Log] **************************************************************************************** 
+2016-11-22 14:35:44,987 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TestCase3       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-11-22 14:35:44,987 INFO  [Log] **************************************************************************************** 
+2016-11-22 14:35:44,987 INFO  [Log] **************************************************************************************** 
+2016-11-22 14:35:44,987 INFO  [Log] Opening Browser 
+2016-11-22 14:35:50,508 INFO  [Log] Navigating to specify URL 
+2016-11-22 14:35:55,835 INFO  [Log] Input value TXT_EMAIL with data: doai.tran@seldatinc.com 
+2016-11-22 14:35:56,127 INFO  [Log] Wait for element present 
+2016-11-22 14:35:56,565 INFO  [Log] Hover to element and click 
+2016-11-22 14:35:56,710 INFO  [Log] Clicking on WebElement WMB_TUTORIALS 
+2016-11-22 14:35:56,911 INFO  [Log] Clicking on WebElement WMB_STRATEGICDECISION 
+2016-11-22 14:35:57,110 INFO  [Log] Wait for 5 seconds 
+2016-11-22 14:36:02,173 INFO  [Log] Closing the browser 
+2016-11-22 14:36:03,084 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:36:03,084 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:36:03,084 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:36:03,084 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:36:03,184 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-11-22 14:36:03,184 INFO  [Log] X 
+2016-11-22 14:36:03,184 INFO  [Log] X 
+2016-11-22 14:36:03,184 INFO  [Log] X 
+2016-11-22 14:36:03,184 INFO  [Log] X 
+2016-11-22 14:36:03,185 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:36:03,186 INFO  [Log] **************************************************************************************** 
+2016-11-22 14:36:03,186 INFO  [Log] **************************************************************************************** 
+2016-11-22 14:36:03,186 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TestCase5       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-11-22 14:36:03,186 INFO  [Log] **************************************************************************************** 
+2016-11-22 14:36:03,186 INFO  [Log] **************************************************************************************** 
+2016-11-22 14:36:03,186 INFO  [Log] Opening Browser 
+2016-11-22 14:36:08,820 INFO  [Log] Navigating to specify URL 
+2016-11-22 14:36:14,214 INFO  [Log] Clicking on WebElement TEXT_DATE 
+2016-11-22 14:36:14,619 INFO  [Log] Clicking on WebElement BTN_ADDMONTH 
+2016-11-22 14:36:15,067 INFO  [Log] Clicking on WebElement BTN_ADDMONTH 
+2016-11-22 14:36:15,415 INFO  [Log] Clicking on WebElement BTN_SWBMONTH 
+2016-11-22 14:36:15,591 INFO  [Log] Clicking on WebElement TBL_DAY22 
+2016-11-22 14:36:15,740 INFO  [Log] Closing the browser 
+2016-11-22 14:36:16,372 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:36:16,372 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:36:16,373 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:36:16,373 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:36:16,445 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-11-22 14:36:16,445 INFO  [Log] X 
+2016-11-22 14:36:16,445 INFO  [Log] X 
+2016-11-22 14:36:16,445 INFO  [Log] X 
+2016-11-22 14:36:16,445 INFO  [Log] X 
+2016-11-22 14:36:16,446 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:36:16,446 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:36:16,446 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:36:16,446 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:36:16,446 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:36:16,446 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:36:16,446 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:36:16,446 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:36:16,446 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:36:16,446 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:36:16,446 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:36:16,446 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:36:16,446 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:36:16,446 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:36:16,446 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:36:16,446 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:36:16,446 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:36:16,446 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:36:16,447 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:36:16,447 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:36:16,447 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:36:16,447 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:36:16,447 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:36:16,447 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:36:16,447 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:36:16,449 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:49:36,936 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:49:36,937 INFO  [Log] **************************************************************************************** 
+2016-11-22 14:49:36,937 INFO  [Log] **************************************************************************************** 
+2016-11-22 14:49:36,937 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TestCase2       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-11-22 14:49:36,937 INFO  [Log] **************************************************************************************** 
+2016-11-22 14:49:36,937 INFO  [Log] **************************************************************************************** 
+2016-11-22 14:49:36,939 INFO  [Log] Opening Browser 
+2016-11-22 14:49:44,293 INFO  [Log] Navigating to specify URL 
+2016-11-22 14:49:49,950 INFO  [Log] Input value TXT_TEXTAREA with data: We will test with Tiếng Việt value and special key !@#$@#%@%# 
+2016-11-22 14:49:50,425 INFO  [Log] Input value TXT_BOX with data: ABCDEDF GHYUI IOPU 
+2016-11-22 14:49:50,895 INFO  [Log] Clicking on WebElement CHK_OPTION1 
+2016-11-22 14:49:51,396 INFO  [Log] Clicking on WebElement LBL_OPTION1 
+2016-11-22 14:49:51,683 INFO  [Log] Try to select by visible text. 
+2016-11-22 14:49:51,909 INFO  [Log] Try to select by visible text. 
+2016-11-22 14:49:52,303 INFO  [Log] Closing the browser 
+2016-11-22 14:49:53,174 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:49:53,174 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:49:53,174 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:49:53,174 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:49:53,244 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-11-22 14:49:53,244 INFO  [Log] X 
+2016-11-22 14:49:53,244 INFO  [Log] X 
+2016-11-22 14:49:53,244 INFO  [Log] X 
+2016-11-22 14:49:53,244 INFO  [Log] X 
+2016-11-22 14:49:53,247 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:49:53,247 INFO  [Log] **************************************************************************************** 
+2016-11-22 14:49:53,247 INFO  [Log] **************************************************************************************** 
+2016-11-22 14:49:53,247 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TestCase5       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-11-22 14:49:53,247 INFO  [Log] **************************************************************************************** 
+2016-11-22 14:49:53,247 INFO  [Log] **************************************************************************************** 
+2016-11-22 14:49:53,247 INFO  [Log] Opening Browser 
+2016-11-22 14:49:59,441 INFO  [Log] Navigating to specify URL 
+2016-11-22 14:50:04,293 INFO  [Log] Clicking on WebElement TEXT_DATE 
+2016-11-22 14:50:04,664 INFO  [Log] Clicking on WebElement BTN_ADDMONTH 
+2016-11-22 14:50:05,073 INFO  [Log] Clicking on WebElement BTN_ADDMONTH 
+2016-11-22 14:50:05,442 INFO  [Log] Clicking on WebElement BTN_SWBMONTH 
+2016-11-22 14:50:05,606 INFO  [Log] Clicking on WebElement TBL_DAY22 
+2016-11-22 14:50:05,899 INFO  [Log] Closing the browser 
+2016-11-22 14:50:06,964 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:50:06,964 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:50:06,964 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:50:06,964 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:50:07,033 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-11-22 14:50:07,033 INFO  [Log] X 
+2016-11-22 14:50:07,033 INFO  [Log] X 
+2016-11-22 14:50:07,033 INFO  [Log] X 
+2016-11-22 14:50:07,033 INFO  [Log] X 
+2016-11-22 14:50:07,034 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:50:07,034 INFO  [Log] **************************************************************************************** 
+2016-11-22 14:50:07,034 INFO  [Log] **************************************************************************************** 
+2016-11-22 14:50:07,034 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TestCase6       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-11-22 14:50:07,034 INFO  [Log] **************************************************************************************** 
+2016-11-22 14:50:07,034 INFO  [Log] **************************************************************************************** 
+2016-11-22 14:50:07,034 INFO  [Log] Opening Browser 
+2016-11-22 14:50:13,137 INFO  [Log] Navigating to specify URL 
+2016-11-22 14:50:17,985 INFO  [Log] Input value TEXT_DATE with data: 11/23/2016 
+2016-11-22 14:50:18,522 INFO  [Log] Closing the browser 
+2016-11-22 14:50:19,946 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:50:19,946 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:50:19,946 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:50:19,946 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:50:20,008 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-11-22 14:50:20,008 INFO  [Log] X 
+2016-11-22 14:50:20,009 INFO  [Log] X 
+2016-11-22 14:50:20,009 INFO  [Log] X 
+2016-11-22 14:50:20,009 INFO  [Log] X 
+2016-11-22 14:50:20,009 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:50:20,009 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:50:20,009 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:50:20,009 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:50:20,009 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:50:20,009 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:50:20,009 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:50:20,009 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:50:20,009 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:50:20,009 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:50:20,009 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:50:20,009 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:50:20,009 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:50:20,009 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:50:20,009 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:50:20,009 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:50:20,009 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:50:20,009 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:50:20,010 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:50:20,011 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:50:20,011 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:50:20,011 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:50:20,011 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:50:20,011 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:50:20,011 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:50:20,011 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:59:19,437 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:59:19,437 INFO  [Log] **************************************************************************************** 
+2016-11-22 14:59:19,437 INFO  [Log] **************************************************************************************** 
+2016-11-22 14:59:19,437 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TestCase2       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-11-22 14:59:19,437 INFO  [Log] **************************************************************************************** 
+2016-11-22 14:59:19,438 INFO  [Log] **************************************************************************************** 
+2016-11-22 14:59:19,440 INFO  [Log] Opening Browser 
+2016-11-22 14:59:29,448 INFO  [Log] Navigating to specify URL 
+2016-11-22 14:59:34,482 INFO  [Log] Input value TXT_TEXTAREA with data: We will test with Tiếng Việt value and special key !@#$@#%@%# 
+2016-11-22 14:59:34,970 INFO  [Log] Input value TXT_BOX with data: ABCDEDF GHYUI IOPU 
+2016-11-22 14:59:35,302 INFO  [Log] Clicking on WebElement CHK_OPTION1 
+2016-11-22 14:59:36,214 INFO  [Log] Clicking on WebElement LBL_OPTION1 
+2016-11-22 14:59:36,528 INFO  [Log] Try to select by visible text. 
+2016-11-22 14:59:36,758 INFO  [Log] Try to select by visible text. 
+2016-11-22 14:59:37,093 INFO  [Log] Closing the browser 
+2016-11-22 14:59:37,967 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:59:37,967 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:59:37,967 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:59:37,967 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:59:38,023 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-11-22 14:59:38,024 INFO  [Log] X 
+2016-11-22 14:59:38,024 INFO  [Log] X 
+2016-11-22 14:59:38,024 INFO  [Log] X 
+2016-11-22 14:59:38,024 INFO  [Log] X 
+2016-11-22 14:59:38,024 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:59:38,024 INFO  [Log] **************************************************************************************** 
+2016-11-22 14:59:38,024 INFO  [Log] **************************************************************************************** 
+2016-11-22 14:59:38,024 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TestCase5       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-11-22 14:59:38,024 INFO  [Log] **************************************************************************************** 
+2016-11-22 14:59:38,025 INFO  [Log] **************************************************************************************** 
+2016-11-22 14:59:38,025 INFO  [Log] Opening Browser 
+2016-11-22 14:59:44,473 INFO  [Log] Navigating to specify URL 
+2016-11-22 14:59:50,046 INFO  [Log] Clicking on WebElement TEXT_DATE 
+2016-11-22 14:59:50,348 INFO  [Log] Clicking on WebElement BTN_ADDMONTH 
+2016-11-22 14:59:50,782 INFO  [Log] Clicking on WebElement BTN_ADDMONTH 
+2016-11-22 14:59:51,376 INFO  [Log] Clicking on WebElement BTN_SWBMONTH 
+2016-11-22 14:59:51,523 INFO  [Log] Clicking on WebElement TBL_DAY22 
+2016-11-22 14:59:51,692 INFO  [Log] Closing the browser 
+2016-11-22 14:59:52,325 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:59:52,325 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:59:52,325 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:59:52,325 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:59:52,387 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-11-22 14:59:52,387 INFO  [Log] X 
+2016-11-22 14:59:52,387 INFO  [Log] X 
+2016-11-22 14:59:52,387 INFO  [Log] X 
+2016-11-22 14:59:52,387 INFO  [Log] X 
+2016-11-22 14:59:52,389 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 14:59:52,389 INFO  [Log] **************************************************************************************** 
+2016-11-22 14:59:52,389 INFO  [Log] **************************************************************************************** 
+2016-11-22 14:59:52,389 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TestCase6       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-11-22 14:59:52,389 INFO  [Log] **************************************************************************************** 
+2016-11-22 14:59:52,390 INFO  [Log] **************************************************************************************** 
+2016-11-22 14:59:52,390 INFO  [Log] Opening Browser 
+2016-11-22 14:59:58,079 INFO  [Log] Navigating to specify URL 
+2016-11-22 15:00:03,517 INFO  [Log] Input value TEXT_DATE with data: 11/23/2016 
+2016-11-22 15:00:04,094 INFO  [Log] Input value TXT_URL with data: ybox.com 
+2016-11-22 15:00:04,874 INFO  [Log] verify text between get from element and expected text: Please enter a valid URL. 
+2016-11-22 15:00:14,967 INFO  [Log] Not able to verify text. 
+2016-11-22 15:00:15,317 INFO  [Log] Closing the browser 
+2016-11-22 15:00:15,990 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-11-22 15:00:15,990 INFO  [Log] X 
+2016-11-22 15:00:15,990 INFO  [Log] X 
+2016-11-22 15:00:15,990 INFO  [Log] X 
+2016-11-22 15:00:15,990 INFO  [Log] X 
+2016-11-22 15:00:15,991 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 15:00:15,991 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 15:00:15,991 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 15:00:15,991 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 15:00:15,991 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 15:00:15,991 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 15:00:15,991 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 15:00:15,991 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 15:00:15,991 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 15:00:15,991 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 15:00:15,991 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 15:00:15,991 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 15:00:15,991 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 15:00:15,991 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 15:00:15,991 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 15:00:15,991 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 15:00:15,991 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 15:00:15,991 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 15:00:15,991 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 15:00:15,991 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 15:00:15,992 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 15:00:15,992 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 15:00:15,992 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 15:00:15,992 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 15:00:15,992 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 15:00:15,992 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 15:04:15,145 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 15:04:15,146 INFO  [Log] **************************************************************************************** 
+2016-11-22 15:04:15,146 INFO  [Log] **************************************************************************************** 
+2016-11-22 15:04:15,146 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TestCase2       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-11-22 15:04:15,146 INFO  [Log] **************************************************************************************** 
+2016-11-22 15:04:15,146 INFO  [Log] **************************************************************************************** 
+2016-11-22 15:04:15,147 INFO  [Log] Opening Browser 
+2016-11-22 15:04:22,017 INFO  [Log] Navigating to specify URL 
+2016-11-22 15:04:26,915 INFO  [Log] Input value TXT_TEXTAREA with data: We will test with Tiếng Việt value and special key !@#$@#%@%# 
+2016-11-22 15:04:27,376 INFO  [Log] Input value TXT_BOX with data: ABCDEDF GHYUI IOPU 
+2016-11-22 15:04:27,665 INFO  [Log] Clicking on WebElement CHK_OPTION1 
+2016-11-22 15:04:28,654 INFO  [Log] Clicking on WebElement LBL_OPTION1 
+2016-11-22 15:04:28,924 INFO  [Log] Try to select by visible text. 
+2016-11-22 15:04:29,147 INFO  [Log] Try to select by visible text. 
+2016-11-22 15:04:29,502 INFO  [Log] Closing the browser 
+2016-11-22 15:04:30,319 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 15:04:30,319 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 15:04:30,319 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 15:04:30,319 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 15:04:30,388 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-11-22 15:04:30,388 INFO  [Log] X 
+2016-11-22 15:04:30,388 INFO  [Log] X 
+2016-11-22 15:04:30,388 INFO  [Log] X 
+2016-11-22 15:04:30,388 INFO  [Log] X 
+2016-11-22 15:04:30,388 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 15:04:30,388 INFO  [Log] **************************************************************************************** 
+2016-11-22 15:04:30,388 INFO  [Log] **************************************************************************************** 
+2016-11-22 15:04:30,388 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TestCase5       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-11-22 15:04:30,388 INFO  [Log] **************************************************************************************** 
+2016-11-22 15:04:30,388 INFO  [Log] **************************************************************************************** 
+2016-11-22 15:04:30,388 INFO  [Log] Opening Browser 
+2016-11-22 15:04:35,846 INFO  [Log] Navigating to specify URL 
+2016-11-22 15:04:41,082 INFO  [Log] Clicking on WebElement TEXT_DATE 
+2016-11-22 15:04:41,399 INFO  [Log] Clicking on WebElement BTN_ADDMONTH 
+2016-11-22 15:04:41,680 INFO  [Log] Clicking on WebElement BTN_ADDMONTH 
+2016-11-22 15:04:42,351 INFO  [Log] Clicking on WebElement BTN_SWBMONTH 
+2016-11-22 15:04:42,511 INFO  [Log] Clicking on WebElement TBL_DAY22 
+2016-11-22 15:04:42,669 INFO  [Log] Closing the browser 
+2016-11-22 15:04:43,282 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 15:04:43,283 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 15:04:43,283 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 15:04:43,283 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 15:04:43,351 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-11-22 15:04:43,351 INFO  [Log] X 
+2016-11-22 15:04:43,351 INFO  [Log] X 
+2016-11-22 15:04:43,351 INFO  [Log] X 
+2016-11-22 15:04:43,351 INFO  [Log] X 
+2016-11-22 15:04:43,351 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 15:04:43,351 INFO  [Log] **************************************************************************************** 
+2016-11-22 15:04:43,351 INFO  [Log] **************************************************************************************** 
+2016-11-22 15:04:43,351 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TestCase6       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-11-22 15:04:43,351 INFO  [Log] **************************************************************************************** 
+2016-11-22 15:04:43,351 INFO  [Log] **************************************************************************************** 
+2016-11-22 15:04:43,351 INFO  [Log] Opening Browser 
+2016-11-22 15:04:48,453 INFO  [Log] Navigating to specify URL 
+2016-11-22 15:04:53,511 INFO  [Log] Input value TEXT_DATE with data: 11/23/2016 
+2016-11-22 15:04:54,069 INFO  [Log] Input value TXT_URL with data: ybox.com 
+2016-11-22 15:04:54,740 INFO  [Log] Submit the button 
+2016-11-22 15:04:54,935 INFO  [Log] verify text between get from element and expected text: Please enter a valid URL. 
+2016-11-22 15:04:55,024 INFO  [Log] Expected text and actual text are the same. 
+2016-11-22 15:04:55,068 INFO  [Log] Input value TXT_URL with data: http://www.seleniumframework.com 
+2016-11-22 15:04:55,385 INFO  [Log] Closing the browser 
+2016-11-22 15:04:55,945 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 15:04:55,945 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 15:04:55,945 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 15:04:55,945 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 15:04:56,015 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-11-22 15:04:56,015 INFO  [Log] X 
+2016-11-22 15:04:56,015 INFO  [Log] X 
+2016-11-22 15:04:56,015 INFO  [Log] X 
+2016-11-22 15:04:56,015 INFO  [Log] X 
+2016-11-22 15:04:56,015 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 15:04:56,015 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 15:04:56,015 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 15:04:56,015 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 15:04:56,015 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 15:04:56,015 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 15:04:56,015 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 15:04:56,015 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 15:04:56,015 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 15:04:56,015 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 15:04:56,015 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 15:04:56,015 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 15:04:56,015 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 15:04:56,015 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 15:04:56,015 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 15:04:56,015 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 15:04:56,015 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 15:04:56,015 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 15:04:56,015 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 15:04:56,015 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 15:04:56,015 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 15:04:56,015 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 15:04:56,015 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 15:04:56,015 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 15:04:56,015 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-22 15:04:56,015 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
