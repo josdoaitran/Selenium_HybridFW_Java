@@ -4,15 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/src/executionEngine/Controller.java" line="26" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aaa8cf3e-2e30-4182-96cb-32ec6d8c7b44" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/testing/dataEngine/TestSuite1.xlsx" afterPath="$PROJECT_DIR$/src/testing/dataEngine/TestSuite1.xlsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/testing/reports/TestResult_TestSuite1.xlsx" afterPath="$PROJECT_DIR$/src/testing/reports/TestResult_TestSuite1.xlsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logfile.log" afterPath="$PROJECT_DIR$/logfile.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/executionEngine/Controller.java" afterPath="$PROJECT_DIR$/src/executionEngine/Controller.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/support/ReadWriteExcel.java" afterPath="$PROJECT_DIR$/src/support/ReadWriteExcel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/testing/objectRepository/OR.txt" afterPath="$PROJECT_DIR$/src/testing/objectRepository/OR.txt" />
-    </list>
+    <list default="true" id="aaa8cf3e-2e30-4182-96cb-32ec6d8c7b44" name="Default" comment="" />
     <ignored path="Java_selenium.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -46,7 +38,7 @@
       <file leaf-file-name="Controller.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/executionEngine/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
+            <state relative-caret-position="195">
               <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
               <folding />
             </state>
@@ -167,10 +159,10 @@
         <option value="$PROJECT_DIR$/src/support/ExecuteTestcase.java" />
         <option value="$PROJECT_DIR$/ReadMe.txt" />
         <option value="$PROJECT_DIR$/src/support/Keyword.java" />
-        <option value="$PROJECT_DIR$/src/executionEngine/Controller.java" />
         <option value="$PROJECT_DIR$/src/support/ReadWriteExcel.java" />
         <option value="$PROJECT_DIR$/logfile.log" />
         <option value="$PROJECT_DIR$/src/testing/objectRepository/OR.txt" />
+        <option value="$PROJECT_DIR$/src/executionEngine/Controller.java" />
       </list>
     </option>
   </component>
@@ -946,12 +938,12 @@
       <workItem from="1479625184646" duration="149000" />
       <workItem from="1479655742058" duration="26000" />
       <workItem from="1479695112127" duration="22465000" />
-      <workItem from="1479780884080" duration="11931000" />
+      <workItem from="1479780884080" duration="12237000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="237075000" />
+    <option name="totallyTimeSpent" value="237381000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1616" height="876" extended-state="6" />
@@ -965,11 +957,11 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27129337" sideWeight="0.42459735" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27129337" sideWeight="0.42825767" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2689295" sideWeight="0.5717423" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24804178" sideWeight="0.5475842" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2689295" sideWeight="0.5717423" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16579634" sideWeight="0.5475842" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.268125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.268125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1186,7 +1178,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/executionEngine/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
+        <state relative-caret-position="195">
           <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
           <folding />
         </state>
