@@ -4,7 +4,22 @@
     <bookmark url="file://$PROJECT_DIR$/src/executionEngine/Controller.java" line="26" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="aaa8cf3e-2e30-4182-96cb-32ec6d8c7b44" name="Default" comment="" />
+    <list default="true" id="aaa8cf3e-2e30-4182-96cb-32ec6d8c7b44" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/KeyWordDriven/testing/dataEngine/~$TestSuite1.xlsx" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/KeyWordDriven/support/Keyword.class" afterPath="$PROJECT_DIR$/out/production/KeyWordDriven/support/Keyword.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/KeyWordDriven/testing/dataEngine/TestSuite1.xlsx" afterPath="$PROJECT_DIR$/out/production/KeyWordDriven/testing/dataEngine/TestSuite1.xlsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/KeyWordDriven/testing/dataEngine/TestSuite2.xlsx" afterPath="$PROJECT_DIR$/out/production/KeyWordDriven/testing/dataEngine/TestSuite2.xlsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/KeyWordDriven/testing/dataEngine/TestSuite3.xlsx" afterPath="$PROJECT_DIR$/out/production/KeyWordDriven/testing/dataEngine/TestSuite3.xlsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/KeyWordDriven/testing/reports/TestResult_TestSuite1.xlsx" afterPath="$PROJECT_DIR$/out/production/KeyWordDriven/testing/reports/TestResult_TestSuite1.xlsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/KeyWordDriven/testing/reports/TestResult_TestSuite2.xlsx" afterPath="$PROJECT_DIR$/out/production/KeyWordDriven/testing/reports/TestResult_TestSuite2.xlsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/testing/dataEngine/TestSuite1.xlsx" afterPath="$PROJECT_DIR$/src/testing/dataEngine/TestSuite1.xlsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/testing/reports/TestResult_TestSuite1.xlsx" afterPath="$PROJECT_DIR$/src/testing/reports/TestResult_TestSuite1.xlsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logfile.log" afterPath="$PROJECT_DIR$/logfile.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/KeyWordDriven/testing/objectRepository/OR.txt" afterPath="$PROJECT_DIR$/out/production/KeyWordDriven/testing/objectRepository/OR.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/support/Keyword.java" afterPath="$PROJECT_DIR$/src/support/Keyword.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/testing/objectRepository/OR.txt" afterPath="$PROJECT_DIR$/src/testing/objectRepository/OR.txt" />
+    </list>
     <ignored path="Java_selenium.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -28,7 +43,7 @@
       <file leaf-file-name="Constants.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/config/Constants.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="49">
+            <state relative-caret-position="200">
               <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="71" />
               <folding />
             </state>
@@ -38,8 +53,8 @@
       <file leaf-file-name="Controller.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/executionEngine/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+            <state relative-caret-position="13">
+              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -48,11 +63,9 @@
       <file leaf-file-name="ExecuteTestcase.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/support/ExecuteTestcase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="101" column="44" selection-start-line="101" selection-start-column="44" selection-end-line="101" selection-end-column="44" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="373">
+              <caret line="98" column="44" selection-start-line="98" selection-start-column="44" selection-end-line="98" selection-end-column="44" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -60,11 +73,9 @@
       <file leaf-file-name="Keyword.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/support/Keyword.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="312" column="33" selection-start-line="312" selection-start-column="23" selection-end-line="312" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="283">
+              <caret line="513" column="48" selection-start-line="513" selection-start-column="48" selection-end-line="513" selection-end-column="48" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -72,8 +83,8 @@
       <file leaf-file-name="logfile.log" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/logfile.log">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1940">
-              <caret line="280" column="0" selection-start-line="280" selection-start-column="0" selection-end-line="280" selection-end-column="0" />
+            <state relative-caret-position="1022">
+              <caret line="1234" column="0" selection-start-line="1234" selection-start-column="0" selection-end-line="1234" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -82,8 +93,8 @@
       <file leaf-file-name="OR.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/testing/objectRepository/OR.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="13" />
+            <state relative-caret-position="660">
+              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -92,8 +103,8 @@
       <file leaf-file-name="ReadMe.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ReadMe.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="292">
-              <caret line="18" column="18" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="18" />
+            <state relative-caret-position="580">
+              <caret line="29" column="28" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -102,8 +113,8 @@
       <file leaf-file-name="ReadWriteExcel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/support/ReadWriteExcel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="127" column="39" selection-start-line="127" selection-start-column="39" selection-end-line="127" selection-end-column="39" />
+            <state relative-caret-position="2260">
+              <caret line="122" column="39" selection-start-line="122" selection-start-column="39" selection-end-line="122" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -158,11 +169,11 @@
         <option value="$PROJECT_DIR$/src/config/Constants.java" />
         <option value="$PROJECT_DIR$/src/support/ExecuteTestcase.java" />
         <option value="$PROJECT_DIR$/ReadMe.txt" />
-        <option value="$PROJECT_DIR$/src/support/Keyword.java" />
         <option value="$PROJECT_DIR$/src/support/ReadWriteExcel.java" />
         <option value="$PROJECT_DIR$/logfile.log" />
         <option value="$PROJECT_DIR$/src/testing/objectRepository/OR.txt" />
         <option value="$PROJECT_DIR$/src/executionEngine/Controller.java" />
+        <option value="$PROJECT_DIR$/src/support/Keyword.java" />
       </list>
     </option>
   </component>
@@ -180,10 +191,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1358" />
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1616" />
-    <option name="height" value="876" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -210,7 +221,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -381,8 +392,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -938,16 +949,17 @@
       <workItem from="1479625184646" duration="149000" />
       <workItem from="1479655742058" duration="26000" />
       <workItem from="1479695112127" duration="22465000" />
-      <workItem from="1479780884080" duration="12237000" />
+      <workItem from="1479780884080" duration="16122000" />
+      <workItem from="1479830707859" duration="2184000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="237381000" />
+    <option name="totallyTimeSpent" value="243450000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1358" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -956,12 +968,12 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27129337" sideWeight="0.42459735" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2681388" sideWeight="0.5717423" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27129337" sideWeight="0.42825767" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2689295" sideWeight="0.5717423" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16579634" sideWeight="0.5475842" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.191906" sideWeight="0.5475842" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.268125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26793557" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1016,7 +1028,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/KeyWordDriven/src/support/ReadWriteExcel.java" />
     <entry file="file://$PROJECT_DIR$/KeyWordDriven/src/config/Constants.java" />
     <entry file="file://$PROJECT_DIR$/KeyWordDriven/src/executionEngine/Controller.java" />
     <entry file="file://$PROJECT_DIR$/KeyWordDriven/src/support/Keyword.java" />
@@ -1083,103 +1094,76 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/testing/reports/imagesLog/Error__TestSuite1__TestCase4__TS_003__Mon Nov 21 14-34-20 ICT 2016.png" />
-    <entry file="file://$PROJECT_DIR$/src/testing/reports/imagesLog/Error__TestSuite1__TestCase4__TS_003__Mon Nov 21 15-15-20 ICT 2016.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/testing/reports/imagesLog/Error__TestSuite1__TestCase4__TS_003__Mon Nov 21 15-15-20 ICT 2016.png" />
     <entry file="file://$PROJECT_DIR$/src/testing/reports/imagesLog/Error__TestSuite1__TestCase3__TS_006__Mon Nov 21 17-16-28 ICT 2016.png" />
-    <entry file="file://$PROJECT_DIR$/src/testing/reports/imagesLog/Error__TestSuite1__TestCase3__TS_002__Tue Nov 22 09-20-28 ICT 2016.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
+    <entry file="file://$PROJECT_DIR$/src/testing/reports/imagesLog/Error__TestSuite1__TestCase3__TS_002__Tue Nov 22 09-20-28 ICT 2016.png" />
+    <entry file="file://$PROJECT_DIR$/src/testing/reports/imagesLog/Error__TestSuite1__TestCase4__TS_002__Tue Nov 22 09-20-44 ICT 2016.png" />
+    <entry file="file://$PROJECT_DIR$/src/testing/reports/imagesLog/Error__TestSuite1__TestCase3__TS_002__Tue Nov 22 09-32-30 ICT 2016.png" />
+    <entry file="file://$PROJECT_DIR$/src/support/ReadWriteExcel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2260">
+          <caret line="122" column="39" selection-start-line="122" selection-start-column="39" selection-end-line="122" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/testing/reports/imagesLog/Error__TestSuite1__TestCase4__TS_002__Tue Nov 22 09-20-44 ICT 2016.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/testing/reports/imagesLog/Error__TestSuite1__TestCase3__TS_002__Tue Nov 22 09-32-30 ICT 2016.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/testing/reports/imagesLog/Error__TestSuite1__TestCase5__TS_004__Tue Nov 22 14-31-14 ICT 2016.png" />
+    <entry file="file://$PROJECT_DIR$/src/testing/reports/imagesLog/Error__TestSuite1__TestCase6__TS_005__Tue Nov 22 15-00-15 ICT 2016.png" />
     <entry file="file://$PROJECT_DIR$/ReadMe.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="18" column="18" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="18" />
+        <state relative-caret-position="580">
+          <caret line="29" column="28" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/testing/reports/imagesLog/Error__TestSuite1__TestCase7__TS_005__Tue Nov 22 15-46-47 ICT 2016.png" />
     <entry file="file://$PROJECT_DIR$/src/config/Constants.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="49">
+        <state relative-caret-position="200">
           <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="71" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/support/ReadWriteExcel.java">
+    <entry file="file://$PROJECT_DIR$/src/testing/objectRepository/OR.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="127" column="39" selection-start-line="127" selection-start-column="39" selection-end-line="127" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="660">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/logfile.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1940">
-          <caret line="280" column="0" selection-start-line="280" selection-start-column="0" selection-end-line="280" selection-end-column="0" />
+        <state relative-caret-position="1022">
+          <caret line="1234" column="0" selection-start-line="1234" selection-start-column="0" selection-end-line="1234" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/testing/reports/imagesLog/Error__TestSuite1__TestCase5__TS_004__Tue Nov 22 14-31-14 ICT 2016.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/support/ExecuteTestcase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="101" column="44" selection-start-line="101" selection-start-column="44" selection-end-line="101" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="373">
+          <caret line="98" column="44" selection-start-line="98" selection-start-column="44" selection-end-line="98" selection-end-column="44" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/support/Keyword.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="312" column="33" selection-start-line="312" selection-start-column="23" selection-end-line="312" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/testing/objectRepository/OR.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="13" />
+        <state relative-caret-position="283">
+          <caret line="513" column="48" selection-start-line="513" selection-start-column="48" selection-end-line="513" selection-end-column="48" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/testing/reports/imagesLog/Error__TestSuite1__TestCase6__TS_005__Tue Nov 22 15-00-15 ICT 2016.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/executionEngine/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+        <state relative-caret-position="13">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
           <folding />
         </state>
       </provider>

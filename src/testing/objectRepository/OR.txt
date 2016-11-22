@@ -30,3 +30,5 @@ BTN_SWBMONTH = .//*[@id='ui-datepicker-div']/div/a[1]/span
 TBL_DAY22 = .//*[@id='ui-datepicker-div']/table/tbody/tr[4]/td[2]/a
 TXT_URL = .//*[@id='vfb-11']
 TEXT_URLERROR = .//*[@id='item-vfb-11']/label[2]
+#################### Only Testing ###################
+TBL_TESTTABLE = .//*[@id='post-body-2641311481947341581']/div[1]/table/tbody/tr/td

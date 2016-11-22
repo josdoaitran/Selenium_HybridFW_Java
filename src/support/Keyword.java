@@ -493,10 +493,29 @@ public class Keyword {
         }
     }
     public static void  verifyTextInTable(String object, String data){
+        boolean valueResult = false;
         try{
-
+            List<WebElement> listCell = DRIVER.findElements(By.xpath(OR.getProperty(object)));
+            for (WebElement iCell: listCell){
+                if(iCell.getText().equals(data)){
+                    Log.info("Value on table is existing.");
+                    System.out.println("Value on table is existing.");
+                    valueResult = true;
+                    break;
+                }else {
+                    Log.info("Value on table is not existing.");
+                    System.out.println("Value on table is not existing.");
+                    valueResult = false;
+                }
+            }
+            if(valueResult == true){
+                ExecuteTestcase.bResult = true;
+            }else {
+                ExecuteTestcase.bResult = false;
+            }
         }catch (Exception e){
-
+            Log.info("Unable to verify text.");
+            ExecuteTestcase.bResult = false;
         }
     }
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
