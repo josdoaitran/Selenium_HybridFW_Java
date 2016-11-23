@@ -493,18 +493,24 @@ public class Keyword {
         }
     }
     public static void  verifyTextInTable(String object, String data){
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        // Des: This function is used to verify text in table
+        // Created by DoaiTran. On: 22-Nov-2016
+        // Updated :
+        // Status: Passed
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
         boolean valueResult = false;
         try{
             List<WebElement> listCell = DRIVER.findElements(By.xpath(OR.getProperty(object)));
             for (WebElement iCell: listCell){
                 if(iCell.getText().equals(data)){
                     Log.info("Value on table is existing.");
-                    System.out.println("Value on table is existing.");
+                    //System.out.println("Value on table is existing.");
                     valueResult = true;
                     break;
                 }else {
                     Log.info("Value on table is not existing.");
-                    System.out.println("Value on table is not existing.");
+                    //System.out.println("Value on table is not existing.");
                     valueResult = false;
                 }
             }
@@ -515,6 +521,86 @@ public class Keyword {
             }
         }catch (Exception e){
             Log.info("Unable to verify text.");
+            ExecuteTestcase.bResult = false;
+        }
+    }
+    public static void verifyCheckboxIsChecked(String object, String data){
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        // Des: This function is used to verify Checkbox Is Checked
+        // Created by DoaiTran. On: 23-Nov-2016
+        // Updated :
+        // Status:
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        try{
+            WebElement checkbox = DRIVER.findElement(By.xpath(OR.getProperty(object)));
+            if(checkbox.isSelected() == true){
+                Log.info("CheckBox is checked.");
+            }else{
+                Log.info("CheckBox is NOT checked.");
+                ExecuteTestcase.bResult = false;
+            }
+        }catch (Exception e) {
+            Log.info("Unable to verify checkbox is checked or not.");
+            ExecuteTestcase.bResult = false;
+        }
+    }
+    public static void verifyCheckboxIsNotChecked(String object, String data){
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        // Des: This function is used to verify Checkbox Is NOT Checked
+        // Created by DoaiTran. On: 23-Nov-2016
+        // Updated :
+        // Status:
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        try{
+            WebElement checkbox = DRIVER.findElement(By.xpath(OR.getProperty(object)));
+            if(checkbox.isSelected() == false){
+                Log.info("CheckBox is NOT checked.");
+            }else{
+                Log.info("CheckBox is checked.");
+                ExecuteTestcase.bResult = false;
+            }
+        }catch (Exception e) {
+            Log.info("Unable to verify checkbox is checked or not.");
+            ExecuteTestcase.bResult = false;
+        }
+    }
+    public static void verifyRadioIsChecked(String object, String data){
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        // Des: This function is used to verify Radio Is Checked
+        // Created by DoaiTran. On: 23-Nov-2016
+        // Updated :
+        // Status:
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        try{
+            WebElement radio = DRIVER.findElement(By.xpath(OR.getProperty(object)));
+            if(radio.isSelected() == true){
+                Log.info("Radio is checked.");
+            }else{
+                Log.info("Radio is NOT checked.");
+                ExecuteTestcase.bResult = false;
+            }
+        }catch (Exception e) {
+            Log.info("Unable to verify checkbox is checked or not.");
+            ExecuteTestcase.bResult = false;
+        }
+    }
+    public static void verifyRadioIsNotChecked(String object, String data){
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        // Des: This function is used to verify Radio Is Not Checked
+        // Created by DoaiTran. On: 23-Nov-2016
+        // Updated :
+        // Status:
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        try{
+            WebElement radio = DRIVER.findElement(By.xpath(OR.getProperty(object)));
+            if(radio.isSelected() == false){
+                Log.info("Radio is NOT checked.");
+            }else{
+                Log.info("Radio is checked.");
+                ExecuteTestcase.bResult = false;
+            }
+        }catch (Exception e) {
+            Log.info("Unable to verify checkbox is checked or not.");
             ExecuteTestcase.bResult = false;
         }
     }

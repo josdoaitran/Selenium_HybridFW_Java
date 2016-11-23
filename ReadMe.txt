@@ -25,6 +25,7 @@ Support:
     - selectByVisibleText                       - selectByValue
     - selectByIndex                             - switchToIFrameWithID
     - switchToIFrameWithName                    - switchToMainPage
+    - verifyTextInTable
 ======================================= Exception Handling =============================================
 Getscreenshot
     + To take screenshots for failed steps on a test cases.
