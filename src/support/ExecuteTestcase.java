@@ -87,7 +87,7 @@ public class ExecuteTestcase {
             if(method[i].getName().equals(sActionKeyword)){
                 method[i].invoke(actionKeywords,sPageObject,sData);
                 //This code block will execute after every test step
-                if(bResult==true){
+                if(bResult == true){
                     //If the executed test step value is true, Pass the test step in Excel sheet
                     ReadWriteExcel.setCellData(Constants.KEYWORD_PASS, iTestStep, Constants.Col_TestStepResult, SheetName, TestReport);
                     sTestCaseResult = true;

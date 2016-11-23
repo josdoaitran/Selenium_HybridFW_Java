@@ -434,16 +434,16 @@ public class Keyword {
         }
     }
     public static void  switchToIFrameWithName(String object, String data){
-        //***************************************************
-        //**  Desc: this function use to switch frame on page. It's used before hover_on_menu, and click_element functions
-        //**        Three functions use to click on submenu on page
-        //**  Currently, "switch_to.frame(str_frame_name)" work well on latest IE and chrome. Not work on new FF version (Verified:NOT YET)
-        //**  On FF should add more wait time.
-        //**  Created By: DoaiTran
-        //**  Created Date: 21-Nov-2016
-        //**  Modification History:
-        //**         Modify by:            Date:       Note:
-        //****************************************************
+        /***************************************************
+        **  Desc: this function use to switch frame on page. It's used before hover_on_menu, and click_element functions
+        **        Three functions use to click on submenu on page
+        **  Currently, "switch_to.frame(str_frame_name)" work well on latest IE and chrome. Not work on new FF version (Verified:NOT YET)
+        **  On FF should add more wait time.
+        **  Created By: DoaiTran
+        **  Created Date: 21-Nov-2016
+        **  Modification History:
+        **         Modify by:            Date:       Note:
+        ****************************************************/
         try{
             Log.info("To switch to iFrame with name");
             List<WebElement> iframes = DRIVER.findElements(By.tagName("iframe")); // (By.xpath("//iframe"));
@@ -476,14 +476,14 @@ public class Keyword {
         }
     }
     public static void switchToMainPage(String object, String data){
-        //***************************************************
-        //**  Desc: this function use to switch frame to main page.
-        //**  Currently, "switch_to.frame(str_frame_name)" work well on latest IE and chrome. Not work on new FF version (Verified:NOT YET)
-        //**  Created By: DoaiTran
-        //**  Created Date: 21-Nov-2016
-        //**  Modification History:
-        //**         Modify by:            Date:       Note:
-        //****************************************************
+        /***************************************************
+        **  Desc: this function use to switch frame to main page.
+        **  Currently, "switch_to.frame(str_frame_name)" work well on latest IE and chrome. Not work on new FF version (Verified:NOT YET)
+        **  Created By: DoaiTran
+        **  Created Date: 21-Nov-2016
+        **  Modification History:
+        **         Modify by:            Date:       Note:
+        ****************************************************/
         try{
             Log.info("To switch to Main Page");
             DRIVER.switchTo().defaultContent();
@@ -493,12 +493,12 @@ public class Keyword {
         }
     }
     public static void  verifyTextInTable(String object, String data){
-        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        // Des: This function is used to verify text in table
-        // Created by DoaiTran. On: 22-Nov-2016
-        // Updated :
-        // Status: Passed
-        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        /***************************************************
+        ** Des: This function is used to verify text in table
+        ** Created by DoaiTran. On: 22-Nov-2016
+        ** Updated :
+        ** Status: Passed
+        ***************************************************/
         boolean valueResult = false;
         try{
             List<WebElement> listCell = DRIVER.findElements(By.xpath(OR.getProperty(object)));
@@ -565,12 +565,12 @@ public class Keyword {
         }
     }
     public static void verifyRadioIsChecked(String object, String data){
-        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        // Des: This function is used to verify Radio Is Checked
-        // Created by DoaiTran. On: 23-Nov-2016
-        // Updated :
-        // Status:
-        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        /**************************************************************************************************
+        ** Des: This function is used to verify Radio Is Checked
+        ** Created by DoaiTran. On: 23-Nov-2016
+        ** Updated :
+        ** Status:
+        **************************************************************************************************/
         try{
             WebElement radio = DRIVER.findElement(By.xpath(OR.getProperty(object)));
             if(radio.isSelected() == true){
@@ -585,12 +585,12 @@ public class Keyword {
         }
     }
     public static void verifyRadioIsNotChecked(String object, String data){
-        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        // Des: This function is used to verify Radio Is Not Checked
-        // Created by DoaiTran. On: 23-Nov-2016
-        // Updated :
-        // Status:
-        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        /**************************************************************************************************
+        ** Des: This function is used to verify Radio Is Not Checked
+        ** Created by DoaiTran. On: 23-Nov-2016
+        ** Updated :
+        ** Status:
+        **************************************************************************************************/
         try{
             WebElement radio = DRIVER.findElement(By.xpath(OR.getProperty(object)));
             if(radio.isSelected() == false){
@@ -609,11 +609,11 @@ public class Keyword {
     //
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     public static void getscreenshot() throws Exception {
-        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        // Created by DoaiTran. On : 26-Oct-2016
-        //  Updated on 08-Nov-2016 for error steps.
-        //  Format of screenshot file name: Error__"TestCaseID"__"TestStepName"__"TimeStampValue".png
-        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        /**************************************************************************************************
+        ** Created by DoaiTran. On : 26-Oct-2016
+        **  Updated on 08-Nov-2016 for error steps.
+        **  Format of screenshot file name: Error__"TestCaseID"__"TestStepName"__"TimeStampValue".png
+        *************************************************************************************************/
         File scrFile = ((TakesScreenshot) DRIVER).getScreenshotAs(OutputType.FILE);
         FileUtils.copyFile(scrFile, new File("src\\testing\\reports\\imagesLog\\" + "Error__" + testsuiteName+"__"+ sTestCaseID + "__" + TestStepName + "__" + GetTimeStampValue() + ".png"));
     }
@@ -626,5 +626,5 @@ public class Keyword {
         System.out.println(systime);
         return systime;
     }
-        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        /************************************/
 }
