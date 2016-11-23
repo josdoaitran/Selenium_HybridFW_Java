@@ -29,11 +29,11 @@ import static support.ExecuteTestcase.*;
 public class Keyword {
     public static WebDriver DRIVER;
     public static void openBrowser(String object, String data){
-        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        // Des: This function is used to define the browser
-        // Created by DoaiTran. Date: 26-Oct-2016
-        // The lasted updated by: DoaiTran 04-Nov-2016 Ref: https://goo.gl/qRMJtv
-        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        /**************************************************************************************************
+        /** Des: This function is used to define the browser
+        /** Created by DoaiTran. Date: 26-Oct-2016
+        /** The lasted updated by: DoaiTran 04-Nov-2016 Ref: https://goo.gl/qRMJtv
+        /**************************************************************************************************/
         Log.info("Opening Browser");
         try {
             switch (data) {
@@ -60,11 +60,11 @@ public class Keyword {
         }
     }
     public static void navigateToURL (String object, String data){
-        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        // Des: This function is used to navigate to BASE_URL
-        // Created by DoaiTran. 26-Oct-2016
-        // The lasted updated by: Doai Tran 27-Oct-2016
-        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        /***************************************************************************************************
+        /** Des: This function is used to navigate to BASE_URL
+        /** Created by DoaiTran. 26-Oct-2016
+        /** The lasted updated by: Doai Tran 27-Oct-2016
+        /***************************************************************************************************/
         try {
             Log.info("Navigating to URL");
             DRIVER.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -76,11 +76,11 @@ public class Keyword {
     }
 
     public static void navigateTo (String object, String data){
-        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        // Des: This function is used to navigate to BASE_URL
-        // Created by DoaiTran. 26-Oct-2016
-        // The lasted updated by: Doai Tran 27-Oct-2016
-        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        /****************************************************************************************************
+        /** Des: This function is used to navigate to BASE_URL
+        /** Created by DoaiTran. 26-Oct-2016
+        /** The lasted updated by: Doai Tran 27-Oct-2016
+        /****************************************************************************************************/
         try {
             Log.info("Navigating to specify URL");
             DRIVER.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -91,11 +91,11 @@ public class Keyword {
         }
     }
     public static void closeBrowser(String object,String data){
-        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        // Des: This function is used to close browser
-        // Created by DoaiTran. On: 26-Oct-2016
-        // Updated by: DoaiTran. On: 27-Oct-2016
-        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        /*****************************************************************************************************
+        /** Des: This function is used to close browser
+        /** Created by DoaiTran. On: 26-Oct-2016
+        /** Updated by: DoaiTran. On: 27-Oct-2016
+        /*****************************************************************************************************/
         try {
             Log.info("Closing the browser");
             DRIVER.quit();
@@ -105,11 +105,11 @@ public class Keyword {
         }
     }
     public static void clickElement(String object, String data){
-        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        // Des: This function is used to click on Elements
-        // Created by DoaiTran. 26-Oct-2016
-        // Updated by: DoaiTran 27-Oct-2016
-        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        /*******************************************************************************************************/
+        /** Des: This function is used to click on Elements
+        /** Created by DoaiTran. 26-Oct-2016
+        /** Updated by: DoaiTran 27-Oct-2016
+        /*******************************************************************************************************/
         try {
             Log.info("Clicking on WebElement "+ object);
             DRIVER.findElement(By.xpath(OR.getProperty(object))).click();
@@ -418,12 +418,12 @@ public class Keyword {
         }
     }
     public static void selectByIndex(String object, int data){
-        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        // Des: This function is used to select By Index
-        // Created by DoaiTran. On: 21-Nov-2016
-        // Updated :
-        // Status: Passed
-        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        /****************************************************************************************************
+        /** Des: This function is used to select By Index
+        /** Created by DoaiTran. On: 21-Nov-2016
+        /** Modification History:
+        /**        Modify by:            Date:       Note:
+        ****************************************************************************************************/
         try{
             Log.info("Try to select by index.");
             Select selectAction =  new Select(DRIVER.findElement(By.xpath(OR.getProperty(object))));
@@ -434,16 +434,16 @@ public class Keyword {
         }
     }
     public static void  switchToIFrameWithName(String object, String data){
-        /***************************************************
-        **  Desc: this function use to switch frame on page. It's used before hover_on_menu, and click_element functions
-        **        Three functions use to click on submenu on page
-        **  Currently, "switch_to.frame(str_frame_name)" work well on latest IE and chrome. Not work on new FF version (Verified:NOT YET)
-        **  On FF should add more wait time.
-        **  Created By: DoaiTran
-        **  Created Date: 21-Nov-2016
-        **  Modification History:
-        **         Modify by:            Date:       Note:
-        ****************************************************/
+        /****************************************************************************************************
+        /**  Desc: this function use to switch frame on page. It's used before hover_on_menu, and click_element functions
+        /**        Three functions use to click on submenu on page
+        /**  Currently, "switch_to.frame(str_frame_name)" work well on latest IE and chrome. Not work on new FF version (Verified:NOT YET)
+        /**  On FF should add more wait time.
+        /**  Created By: DoaiTran
+        /**  Created Date: 21-Nov-2016
+        /**  Modification History:
+        /**         Modify by:            Date:       Note:
+        /*****************************************************************************************************/
         try{
             Log.info("To switch to iFrame with name");
             List<WebElement> iframes = DRIVER.findElements(By.tagName("iframe")); // (By.xpath("//iframe"));
@@ -460,6 +460,12 @@ public class Keyword {
         }
     }
     public static void  switchToIFrameWithID(String object, String data){
+        /***************************************************************************************************
+        /** Desc: this function use to switch To IFrame With ID
+        /** Created By: DoaiTran
+        /** Modification History:
+        /**         Modify by:            Date:       Note:
+        ***************************************************************************************************/
         try{
             Log.info("To switch to iFrame with iFrameID");
             List<WebElement> iframes = DRIVER.findElements(By.id("iframe"));
@@ -476,14 +482,14 @@ public class Keyword {
         }
     }
     public static void switchToMainPage(String object, String data){
-        /***************************************************
-        **  Desc: this function use to switch frame to main page.
-        **  Currently, "switch_to.frame(str_frame_name)" work well on latest IE and chrome. Not work on new FF version (Verified:NOT YET)
-        **  Created By: DoaiTran
-        **  Created Date: 21-Nov-2016
-        **  Modification History:
-        **         Modify by:            Date:       Note:
-        ****************************************************/
+        /****************************************************************************************************
+        /**  Desc: this function use to switch frame to main page.
+        /**  Currently, "switch_to.frame(str_frame_name)" work well on latest IE and chrome. Not work on new FF version (Verified:NOT YET)
+        /**  Created By: DoaiTran
+        /**  Created Date: 21-Nov-2016
+        /**  Modification History:
+        /**         Modify by:            Date:       Note:
+        /*****************************************************************************************************/
         try{
             Log.info("To switch to Main Page");
             DRIVER.switchTo().defaultContent();
@@ -493,12 +499,14 @@ public class Keyword {
         }
     }
     public static void  verifyTextInTable(String object, String data){
-        /***************************************************
-        ** Des: This function is used to verify text in table
-        ** Created by DoaiTran. On: 22-Nov-2016
-        ** Updated :
-        ** Status: Passed
-        ***************************************************/
+        /***************************************************************************************************
+        /**  Desc: this function use to verifyTextInTable
+        /**  Currently,
+        /**  Created By: DoaiTran
+        /**  Created Date: 22-Nov-2016
+        /**  Modification History:
+        /**         Modify by:            Date:       Note:
+        /****************************************************************************************************/
         boolean valueResult = false;
         try{
             List<WebElement> listCell = DRIVER.findElements(By.xpath(OR.getProperty(object)));
@@ -525,12 +533,12 @@ public class Keyword {
         }
     }
     public static void verifyCheckboxIsChecked(String object, String data){
-        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        // Des: This function is used to verify Checkbox Is Checked
-        // Created by DoaiTran. On: 23-Nov-2016
-        // Updated :
-        // Status:
-        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        /****************************************************************************************************
+        /** Des: This function is used to verify Checkbox Is Checked
+        /** Created by DoaiTran. On: 23-Nov-2016
+        /** Modification History:
+        /**        Modify by:            Date:       Note:
+        /****************************************************************************************************/
         try{
             WebElement checkbox = DRIVER.findElement(By.xpath(OR.getProperty(object)));
             if(checkbox.isSelected() == true){
@@ -545,12 +553,13 @@ public class Keyword {
         }
     }
     public static void verifyCheckboxIsNotChecked(String object, String data){
-        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        // Des: This function is used to verify Checkbox Is NOT Checked
-        // Created by DoaiTran. On: 23-Nov-2016
-        // Updated :
-        // Status:
-        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        /****************************************************************************************************
+        /** Des: This function is used to verify Checkbox Is NOT Checked
+        /** Created by DoaiTran. On: 23-Nov-2016
+        /**
+        /** Modification History:
+        /**       Modify by:            Date:       Note:
+        /****************************************************************************************************/
         try{
             WebElement checkbox = DRIVER.findElement(By.xpath(OR.getProperty(object)));
             if(checkbox.isSelected() == false){
@@ -566,11 +575,11 @@ public class Keyword {
     }
     public static void verifyRadioIsChecked(String object, String data){
         /**************************************************************************************************
-        ** Des: This function is used to verify Radio Is Checked
-        ** Created by DoaiTran. On: 23-Nov-2016
-        ** Updated :
-        ** Status:
-        **************************************************************************************************/
+        /** Des: This function is used to verify Radio Is Checked
+        /** Created by DoaiTran. On: 23-Nov-2016
+        /** Modification History:
+        /**         Modify by:            Date:       Note:
+        /**************************************************************************************************/
         try{
             WebElement radio = DRIVER.findElement(By.xpath(OR.getProperty(object)));
             if(radio.isSelected() == true){
@@ -586,11 +595,11 @@ public class Keyword {
     }
     public static void verifyRadioIsNotChecked(String object, String data){
         /**************************************************************************************************
-        ** Des: This function is used to verify Radio Is Not Checked
-        ** Created by DoaiTran. On: 23-Nov-2016
-        ** Updated :
-        ** Status:
-        **************************************************************************************************/
+        /** Des: This function is used to verify Radio Is Not Checked
+        /** Created by DoaiTran. On: 23-Nov-2016
+        /** Modification History:
+        /**         Modify by:            Date:       Note:
+        /**************************************************************************************************/
         try{
             WebElement radio = DRIVER.findElement(By.xpath(OR.getProperty(object)));
             if(radio.isSelected() == false){
@@ -609,11 +618,13 @@ public class Keyword {
     //
     ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     public static void getscreenshot() throws Exception {
-        /**************************************************************************************************
-        ** Created by DoaiTran. On : 26-Oct-2016
-        **  Updated on 08-Nov-2016 for error steps.
-        **  Format of screenshot file name: Error__"TestCaseID"__"TestStepName"__"TimeStampValue".png
-        *************************************************************************************************/
+        /***************************************************************************************************
+        /** Created by DoaiTran. On : 26-Oct-2016
+        /**  Updated on 08-Nov-2016 for error steps.
+        /**  Format of screenshot file name: Error__"TestCaseID"__"TestStepName"__"TimeStampValue".png
+        /** Modification:
+        /**         Modify by:            Date:       Note:
+        /*************************************************************************************************/
         File scrFile = ((TakesScreenshot) DRIVER).getScreenshotAs(OutputType.FILE);
         FileUtils.copyFile(scrFile, new File("src\\testing\\reports\\imagesLog\\" + "Error__" + testsuiteName+"__"+ sTestCaseID + "__" + TestStepName + "__" + GetTimeStampValue() + ".png"));
     }
