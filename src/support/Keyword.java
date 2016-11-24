@@ -32,7 +32,8 @@ public class Keyword {
         /**************************************************************************************************
         /** Des: This function is used to define the browser
         /** Created by DoaiTran. Date: 26-Oct-2016
-        /** The lasted updated by: DoaiTran 04-Nov-2016 Ref: https://goo.gl/qRMJtv
+        /** Modification History:
+        /**        Modify by: DoaiTran           Date: 04-Nov-2016       Note: https://goo.gl/qRMJtv
         /**************************************************************************************************/
         Log.info("Opening Browser");
         try {
@@ -63,7 +64,8 @@ public class Keyword {
         /***************************************************************************************************
         /** Des: This function is used to navigate to BASE_URL
         /** Created by DoaiTran. 26-Oct-2016
-        /** The lasted updated by: Doai Tran 27-Oct-2016
+        /** Modification History:
+        /**        Modify by: DoaiTran           Date: 27-Oct-2016       Note:
         /***************************************************************************************************/
         try {
             Log.info("Navigating to URL");
@@ -79,7 +81,8 @@ public class Keyword {
         /****************************************************************************************************
         /** Des: This function is used to navigate to BASE_URL
         /** Created by DoaiTran. 26-Oct-2016
-        /** The lasted updated by: Doai Tran 27-Oct-2016
+        /** Modification History:
+        /**        Modify by: DoaiTran           Date: 27-Oct-2016       Note:
         /****************************************************************************************************/
         try {
             Log.info("Navigating to specify URL");
@@ -94,7 +97,8 @@ public class Keyword {
         /*****************************************************************************************************
         /** Des: This function is used to close browser
         /** Created by DoaiTran. On: 26-Oct-2016
-        /** Updated by: DoaiTran. On: 27-Oct-2016
+        /** Modification History:
+        /**        Modify by: DoaiTran           Date: 27-Oct-2016       Note:
         /*****************************************************************************************************/
         try {
             Log.info("Closing the browser");
@@ -108,7 +112,8 @@ public class Keyword {
         /*******************************************************************************************************/
         /** Des: This function is used to click on Elements
         /** Created by DoaiTran. 26-Oct-2016
-        /** Updated by: DoaiTran 27-Oct-2016
+        /** Modification History:
+        /**        Modify by:            Date:       Note:
         /*******************************************************************************************************/
         try {
             Log.info("Clicking on WebElement "+ object);
@@ -119,11 +124,12 @@ public class Keyword {
         }
     }
     public static void clickElementByLinkText(String object, String data){
-        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        // Des: This function is used to clickElementByLinkText
-        // Created by DoaiTran. 26-Oct-2016
-        // Updated by: DoaiTran 27-Oct-2016
-        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        /****************************************************************************************************
+        /** Des: This function is used to clickElementByLinkText
+        /** Created by DoaiTran. 26-Oct-2016
+        /** Modification History:
+        /**        Modify by: DoaiTran           Date: 27-Oct-2016       Note:
+        /****************************************************************************************************/
         try {
             Log.info("Clicking on WebElement ByLinkText "+ object);
             DRIVER.findElement(By.linkText(OR.getProperty(object))).click();
@@ -133,12 +139,12 @@ public class Keyword {
         }
     }
     public static void waitAndPause(String object,String data) throws InterruptedException {
-        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        // Des: This function is used to pause all actions with time (MilSecond).
-        // Created by DoaiTran. On: 26-Oct-2016
-        // Updated by DoaiTran. On 28-Oct-2016
-        // Status: Passed
-        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        /****************************************************************************************************
+        /** Des: This function is used to pause all actions with time (MilSecond).
+        /** Created by DoaiTran. On: 26-Oct-2016
+        /** Modification History:
+        /**        Modify by:            Date:       Note:
+        /****************************************************************************************************/
         try{
             Log.info("Wait for 5 seconds");
             //int ndata = Integer.parseInt(data);
@@ -150,12 +156,12 @@ public class Keyword {
         }
     }
     public static void inputValue(String object, String data){
-        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        // Des: This function is used to clear and input data to text box.
-        // Created by DoaiTran. On: 07-Nov-2016
-        // Updated:
-        // Status: Passed
-        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        /****************************************************************************************************
+        /** Des: This function is used to clear and input data to text box.
+        /** Created by DoaiTran. On: 07-Nov-2016
+        /** Modification History:
+        /**        Modify by:            Date:       Note:
+        /****************************************************************************************************/
         try{
             Log.info("Input value "+ object + " with data: " + data);
             WebDriverWait wait = new WebDriverWait(DRIVER, 15);
@@ -167,12 +173,12 @@ public class Keyword {
         }
     }
     public static void clearTextBox(String object, String data){
-        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        // Des: This function is used to clear data on text box
-        // Created by DoaiTran. On: 07-Nov-2016
-        // Updated :
-        // Status: Passed
-        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        /****************************************************************************************************
+        /** Des: This function is used to clear data on text box
+        /** Created by DoaiTran. On: 07-Nov-2016
+        /** Modification History:
+        /**        Modify by:            Date:       Note:
+        /****************************************************************************************************/
         try{
             Log.info("Clear data on text box");
             WebDriverWait wait = new WebDriverWait(DRIVER, 15);
@@ -183,12 +189,12 @@ public class Keyword {
         }
     }
     public static void submit(String object, String data){
-        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        // Des: This function is used to submit button
-        // Created by DoaiTran. On: 13-Nov-2016
-        // Updated :
-        // Status:
-        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        /****************************************************************************************************
+        /** Des: This function is used to submit button
+        /** Created by DoaiTran. On: 13-Nov-2016
+        /** Modification History:
+        /**        Modify by:            Date:       Note:
+        /****************************************************************************************************/
         try{
             Log.info("Submit the button");
             WebDriverWait wait = new WebDriverWait(DRIVER, 15);
@@ -199,12 +205,12 @@ public class Keyword {
         }
     }
     public static void navigateToBack(String object, String data){
-        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        // Des: This function is used to navigate to Back page
-        // Created by DoaiTran. On: 13-Nov-2016
-        // Updated :
-        // Status:
-        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        /****************************************************************************************************
+        /** Des: This function is used to navigate to Back page
+        /** Created by DoaiTran. On: 13-Nov-2016
+        /** Modification History:
+        /**        Modify by:            Date:       Note:
+        /****************************************************************************************************/
         try{
             Log.info("Navifate to back page");
             DRIVER.navigate().back();
@@ -215,12 +221,12 @@ public class Keyword {
         }
     }
     public static void  navigatetoForward(String object, String data){
-        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        // Des: This function is used to navigate to Forward
-        // Created by DoaiTran. On: 13-Nov-2016
-        // Updated :
-        // Status:
-        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        /****************************************************************************************************
+        ** Des: This function is used to navigate to Forward
+        /** Created by DoaiTran. On: 13-Nov-2016
+        /** Modification History:
+        /**        Modify by:            Date:       Note:
+        /****************************************************************************************************/
         try{
             Log.info("Navigate to Forward page");
             DRIVER.navigate().forward();
@@ -230,12 +236,12 @@ public class Keyword {
         }
     }
     public static void refreshPage(String object, String data){
-        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        // Des: This function is used to refresh page
-        // Created by DoaiTran. On: 13-Nov-2016
-        // Updated :
-        // Status:
-        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        /****************************************************************************************************
+        /** Des: This function is used to refresh page
+        /** Created by DoaiTran. On: 13-Nov-2016
+        /** Modification History:
+        /**        Modify by:            Date:       Note:
+        /****************************************************************************************************/
         try{
             Log.info("Refresh page");
             DRIVER.navigate().refresh();
@@ -245,12 +251,12 @@ public class Keyword {
         }
     }
     public static void  moveToElement(String object, String data){
-        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        // Des: This function is used to movetoElement
-        // Created by DoaiTran. On: 13-Nov-2016
-        // Updated :
-        // Status:
-        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        /****************************************************************************************************
+        /** Des: This function is used to movetoElement
+        /** Created by DoaiTran. On: 13-Nov-2016
+        /** Modification History:
+        /**        Modify by:            Date:       Note:
+        /****************************************************************************************************/
         try{
             Log.info("Hover to element and click");
             Actions actions = new Actions(DRIVER);
@@ -262,12 +268,12 @@ public class Keyword {
         }
     }
     public static void doubleClick(String object, String data){
-        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        // Des: This function is used to doubleClick
-        // Created by DoaiTran. On: 20-Nov-2016
-        // Updated :            Date:
-        // Status:
-        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        /****************************************************************************************************
+        /** Des: This function is used to doubleClick
+        /** Created by DoaiTran. On: 20-Nov-2016
+        /** Modification History:
+        /**        Modify by:            Date:       Note:
+        /****************************************************************************************************/
         try{
             Log.info("DoubleClick on Element: " + data);
             Actions actions = new Actions(DRIVER);
@@ -279,12 +285,12 @@ public class Keyword {
         }
     }
     public static void  waitForElementPresent(String object, String data){
-        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        // Des: This function is used to waitForElementPresent
-        // Created by DoaiTran. On: 20-Nov-2016
-        // Updated :
-        // Status: Passed
-        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        /****************************************************************************************************
+        /** Des: This function is used to waitForElementPresent
+        /** Created by DoaiTran. On: 20-Nov-2016
+        /** Modification History:
+        /**        Modify by:            Date:       Note:
+        /****************************************************************************************************/
         try{
             Log.info("Wait for element present");
             WebDriverWait wait = new WebDriverWait(DRIVER, 15);
@@ -295,12 +301,12 @@ public class Keyword {
         }
     }
     public static void verifyElementIsExisted(String object, String data){
-        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        // Des: This function is used to Verify element is existedt
-        // Created by DoaiTran. On: 20-Nov-2016
-        // Updated :
-        // Status: Passed
-        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        /****************************************************************************************************
+        /** Des: This function is used to Verify element is existedt
+        /** Created by DoaiTran. On: 20-Nov-2016
+        /** Modification History:
+        /**        Modify by:            Date:       Note:
+        /****************************************************************************************************/
         try{
             Log.info("Verify Element is existed.");
             WebDriverWait wait = new WebDriverWait(DRIVER, 15);
@@ -311,12 +317,12 @@ public class Keyword {
         }
     }
     public static void verifyText(String object, String data){
-        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        // Des: This function is used to verify actual text and expected text.
-        // Created by DoaiTran. On: 21-Nov-2016
-        // Updated :
-        // Status: Passed
-        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        /****************************************************************************************************
+        /** Des: This function is used to verify actual text and expected text.
+        /** Created by DoaiTran. On: 21-Nov-2016
+        /** Modification History:
+        /**        Modify by:            Date:       Note:
+        /****************************************************************************************************/
         try{
             Log.info("verify text between get from element and expected text: "+ data);
             String actualText = DRIVER.findElement(By.xpath(OR.getProperty(object))).getText();
@@ -333,12 +339,12 @@ public class Keyword {
         }
     }
     public static void closeAllBrowsers(String object, String data){
-        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        // Des: This function is used to kill all browser processes.
-        // Created by DoaiTran. On: 21-Nov-2016
-        // Updated :
-        // Status:
-        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        /****************************************************************************************************
+        /** Des: This function is used to kill all browser processes.
+        /** Created by DoaiTran. On: 21-Nov-2016
+        /** Modification History:
+        /**        Modify by:            Date:       Note:
+        /****************************************************************************************************/
         try{
             Log.info("Try to kill all browser processes.");
             taskkill("Chrome");
@@ -365,12 +371,12 @@ public class Keyword {
         }
     }
     public static void waitForAjax(String object, String data){
-        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        // Des: This function is used to waitForAjax.
-        // Created by DoaiTran. On: 21-Nov-2016
-        // Updated :
-        // Status:
-        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        /****************************************************************************************************
+        /** Des: This function is used to waitForAjax.
+        /** Created by DoaiTran. On: 21-Nov-2016
+        /** Modification History:
+        /**        Modify by:            Date:       Note:
+        /****************************************************************************************************/
         try {
             Log.info("Wait for Ajax script be executed.");
             new WebDriverWait(DRIVER, 180).until(new ExpectedCondition<Boolean>()
@@ -386,12 +392,12 @@ public class Keyword {
         }
     }
     public static void selectByVisibleText(String object, String data){
-        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        // Des: This function is used to select By Visible Text
-        // Created by DoaiTran. On: 21-Nov-2016
-        // Updated :
-        // Status: Passed
-        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        /****************************************************************************************************
+        /** Des: This function is used to select By Visible Text
+        /** Created by DoaiTran. On: 21-Nov-2016
+        /** Modification History:
+        /**        Modify by:            Date:       Note:
+        /****************************************************************************************************/
         try{
             Log.info("Try to select by visible text.");
             Select selectAction =  new Select(DRIVER.findElement(By.xpath(OR.getProperty(object))));
@@ -402,12 +408,12 @@ public class Keyword {
         }
     }
     public static void selectByValue(String object, String data){
-        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        // Des: This function is used to select By Value
-        // Created by DoaiTran. On: 21-Nov-2016
-        // Updated :
-        // Status: Passed
-        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        /****************************************************************************************************
+        /** Des: This function is used to select By Value
+        /** Created by DoaiTran. On: 21-Nov-2016
+        /** Modification History:
+        /**        Modify by:            Date:       Note:
+        /****************************************************************************************************/
         try{
             Log.info("Try to select by value.");
             Select selectAction =  new Select(DRIVER.findElement(By.xpath(OR.getProperty(object))));
@@ -423,7 +429,7 @@ public class Keyword {
         /** Created by DoaiTran. On: 21-Nov-2016
         /** Modification History:
         /**        Modify by:            Date:       Note:
-        ****************************************************************************************************/
+        /****************************************************************************************************/
         try{
             Log.info("Try to select by index.");
             Select selectAction =  new Select(DRIVER.findElement(By.xpath(OR.getProperty(object))));
@@ -465,7 +471,7 @@ public class Keyword {
         /** Created By: DoaiTran
         /** Modification History:
         /**         Modify by:            Date:       Note:
-        ***************************************************************************************************/
+        /***************************************************************************************************/
         try{
             Log.info("To switch to iFrame with iFrameID");
             List<WebElement> iframes = DRIVER.findElements(By.id("iframe"));
@@ -611,6 +617,63 @@ public class Keyword {
         }catch (Exception e) {
             Log.info("Unable to verify checkbox is checked or not.");
             ExecuteTestcase.bResult = false;
+        }
+    }
+    public static void checkCheckbox (String object, String data){
+        /**************************************************************************************************
+        /** Des: This function is used to check Checkbox
+        /** Created by DoaiTran. On: 24-Nov-2016
+        /** Modification History:
+        /**         Modify by:            Date:       Note:
+        /**************************************************************************************************/
+        try{
+            WebElement objCheckbox = DRIVER.findElement(By.xpath(OR.getProperty(object)));
+            if(objCheckbox.isSelect()==false){
+                objCheckbox.click();
+                Log.info("Check checkedbox.");
+            }
+        }catch (Exception e){
+            Log.info("Unable to check checkedbox.----");
+            ExecuteTestcase.bResult = false;
+        }
+    }
+    public static void  unCheckCheckbox (String object, String data){
+        /**************************************************************************************************
+        /** Des: This function is used to uncheck Checkbox
+        /** Created by DoaiTran. On: 24-Nov-2016
+        /** Modification History:
+        /**         Modify by:            Date:       Note:
+        /**************************************************************************************************/
+        try{
+            WebElement objCheckbox = DRIVER.findElement(By.xpath(OR.getProperty(object)));
+            if(objCheckbox.isSelect()==true){
+                objCheckbox.click();
+                Log.info("Uncheck checkedbox.");
+            }
+        }catch (Exception e){
+            Log.info("Unable to uncheck checkedbox.----");
+            ExecuteTestcase.bResult = false;
+        }
+    }
+    public static void  clickTreeViewItem (String object, String data){
+        try{
+
+        }catch (Exception e){
+
+        }
+    }
+    public static void  verifyTreeviewItemExist (String object, String data){
+        try{
+
+        }catch (Exception e){
+
+        }
+    }
+    public static void  verifyTreeviewItemNotExist (String object, String data){
+        try{
+
+        }catch (Exception e){
+
         }
     }
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
