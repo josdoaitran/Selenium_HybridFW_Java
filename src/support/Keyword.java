@@ -619,7 +619,7 @@ public class Keyword {
             ExecuteTestcase.bResult = false;
         }
     }
-    public static void checkCheckbox (String object, String data){
+    public static void checkCheckbox(String object, String data){
         /**************************************************************************************************
         /** Des: This function is used to check Checkbox
         /** Created by DoaiTran. On: 24-Nov-2016
@@ -628,7 +628,7 @@ public class Keyword {
         /**************************************************************************************************/
         try{
             WebElement objCheckbox = DRIVER.findElement(By.xpath(OR.getProperty(object)));
-            if(objCheckbox.isSelect()==false){
+            if(objCheckbox.isSelected()== false){
                 objCheckbox.click();
                 Log.info("Check checkedbox.");
             }
@@ -646,7 +646,7 @@ public class Keyword {
         /**************************************************************************************************/
         try{
             WebElement objCheckbox = DRIVER.findElement(By.xpath(OR.getProperty(object)));
-            if(objCheckbox.isSelect()==true){
+            if(objCheckbox.isSelected()==true){
                 objCheckbox.click();
                 Log.info("Uncheck checkedbox.");
             }
@@ -656,24 +656,85 @@ public class Keyword {
         }
     }
     public static void  clickTreeViewItem (String object, String data){
+        /*************************************************************************************************
+        /** Des: This function is used to click TreeView Item
+        /** Created by DoaiTran. On: 25-Nov-2016
+        /** Modification History:
+        /**         Modify by:            Date:       Note:
+        /************************************************************************************************/
+        boolean valueResult = false;
         try{
-
+            WebElement treeView = DRIVER.findElement(By.xpath(OR.getProperty(object)));
+            List<WebElement> listChild = treeView.findElements(By.tagName("span"));
+            for (WebElement child : listChild)
+                if (child.getText() == data) {
+                    child.click();
+                    valueResult = true;
+                    break;
+                }
+            if(valueResult = true){
+                Log.info("Item "+ data +"is existed in tree view.");
+            }else {
+                Log.info("Item "+ data +"is NOT existed in tree view.");
+                ExecuteTestcase.bResult = false;
+            }
         }catch (Exception e){
-
+            Log.info("Unable to click Tree View Item. ");
+            ExecuteTestcase.bResult = false;
         }
     }
     public static void  verifyTreeviewItemExist (String object, String data){
+        /*************************************************************************************************
+        /** Des: This function is used to verify Tree view Item Exist
+        /** Created by DoaiTran. On: 25-Nov-2016
+        /** Modification History:
+        /**         Modify by:            Date:       Note:
+        /************************************************************************************************/
+        boolean valueResult = false;
         try{
-
+            WebElement treeView = DRIVER.findElement(By.xpath(OR.getProperty(object)));
+            List<WebElement> listChild = treeView.findElements(By.tagName("span"));
+            for (WebElement child : listChild)
+                if (child.getText() == data) {
+                     valueResult = true;
+                    break;
+                }
+            if(valueResult = true){
+                Log.info("Item "+ data +"is existed in tree view.");
+            }else {
+                Log.info("Item "+ data +"is NOT existed in tree view.");
+                ExecuteTestcase.bResult = false;
+            }
         }catch (Exception e){
-
+            Log.info("Unable to click Tree View Item. ");
+            ExecuteTestcase.bResult = false;
         }
     }
     public static void  verifyTreeviewItemNotExist (String object, String data){
+        /*************************************************************************************************
+         /** Des: This function is used to click TreeView Item
+         /** Created by DoaiTran. On: 25-Nov-2016
+         /** Modification History:
+         /**         Modify by:            Date:       Note:
+         /************************************************************************************************/
+        boolean valueResult = false;
         try{
-
+            WebElement treeView = DRIVER.findElement(By.xpath(OR.getProperty(object)));
+            List<WebElement> listChild = treeView.findElements(By.tagName("span"));
+            for (WebElement child : listChild)
+                if (child.getText() == data) {
+                    valueResult = false;
+                    break;
+                }
+            if(valueResult = true){
+                Log.info("Item "+ data +"is existed in tree view.");
+            }else {
+                Log.info("Item "+ data +"is NOT existed in tree view.");
+                ExecuteTestcase.bResult = false;
+            }
         }catch (Exception e){
-
+            Log.info("Unable to click Tree View Item. ");
+            ExecuteTestcase.bResult = false;
         }
     }
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
