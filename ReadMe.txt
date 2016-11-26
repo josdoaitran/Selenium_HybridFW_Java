@@ -9,7 +9,7 @@ Support:
 + Excel 2003 - 2016. Report: Summary report and charts.
 + Exception handling: Take screenshot for failed steps.
 + Object repositories be following by XPATH
-========================================= 23 Keywords ===================================================
+========================================= 41 Keywords ===================================================
     - openBrowser : Chrome, FF, IE. Default browser: FF ~ FireFox
     - navigateToURL : Set the browser to go to URL (Defined on OR ~ Object Repository file)
     - navigateTo : Go to the URL (Define on data test column on Excel file)
@@ -31,6 +31,8 @@ Support:
     - checkCheckBox                             - unCheckCheckBox
     - clickTreeViewItem                         - verifyTreeViewItemExist
     - verifyTreeViewItemNotExist
+    - closeAlertOfBrowser                       - acceptAlertOfBrowser
+    - verifyAlertText                           - sendValueToAlert
 ======================================= Exception Handling =============================================
 Getscreenshot
     + To take screenshots for failed steps on a test cases.

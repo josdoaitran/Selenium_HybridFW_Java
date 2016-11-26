@@ -799,6 +799,51 @@ public class Keyword {
             ExecuteTestcase.bResult = false;
         }
     }
+    public static void closeAlertOfBrowser(String object, String data){
+        try{
+            Log.info("*Try to close alert of browser*");
+            DRIVER.switchTo().alert().dismiss();
+            Log.info("Closed alert of browser successfully.");
+        }catch (Exception e){
+            Log.info("-------- Unable to close alert of browser --------");
+            ExecuteTestcase.bResult = false;
+        }
+    }
+    public static void acceptAlertOfBrowser(String object, String data){
+        try{
+            Log.info("*Try to accept alert of browser*");
+            DRIVER.switchTo().alert().accept();
+            Log.info("Accepted alert of browser successfully.");
+        }catch (Exception e){
+            Log.info("-------- Unable to accept alert of browser --------");
+            ExecuteTestcase.bResult = false;
+        }
+    }
+    public static void verifyAlertText(String object, String data){
+        try{
+            Log.info("*Try to verify AlertText*");
+            String getText = DRIVER.switchTo().alert().getText();
+            if(getText == data){
+                Log.info("AlertText is  the same with "+ data);
+            }else {
+                Log.info("AlertText is  different with "+ data);
+                ExecuteTestcase.bResult = false;
+            }
+        }catch (Exception e){
+            Log.info("-------- Unable to accept alert of browser --------");
+            ExecuteTestcase.bResult = false;
+        }
+    }
+    public static void sendValueToAlert(String object, String data){
+        try{
+            Log.info("*Try to send value to Alert*");
+            DRIVER.switchTo().alert().sendKeys(data);
+            Log.info("Sent value: "+data+" to alert successfully.");
+        }catch (Exception e){
+            Log.info("-------- Unable to send value to Alert --------");
+            ExecuteTestcase.bResult = false;
+        }
+    }
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     //  Exception handling
     //
