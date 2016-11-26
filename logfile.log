@@ -1,0 +1,90 @@
+2016-11-26 23:10:50,983 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-26 23:10:50,983 INFO  [Log] **************************************************************************************** 
+2016-11-26 23:10:50,983 INFO  [Log] **************************************************************************************** 
+2016-11-26 23:10:50,983 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TestCase8       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-11-26 23:10:50,983 INFO  [Log] **************************************************************************************** 
+2016-11-26 23:10:50,983 INFO  [Log] **************************************************************************************** 
+2016-11-26 23:10:50,983 INFO  [Log] *Try to Open Browser* 
+2016-11-26 23:11:01,510 INFO  [Log] Opened Browser: FF 
+2016-11-26 23:11:02,610 INFO  [Log] *Try to navigate to specify URL* 
+2016-11-26 23:11:07,164 INFO  [Log] Navigated to specify URL: http://only-testing-blog.blogspot.in/2014/02/attributes.html 
+2016-11-26 23:11:07,411 INFO  [Log] *Try to wait for 5 seconds* 
+2016-11-26 23:11:12,411 INFO  [Log] Waited for 5 seconds 
+2016-11-26 23:11:12,635 INFO  [Log] *Try to verify Checkbox Is Checked* 
+2016-11-26 23:11:12,883 INFO  [Log] CheckBox: CHK_MILK is checked. 
+2016-11-26 23:11:13,017 INFO  [Log] *Try to verify Checkbox Is Not Checked* 
+2016-11-26 23:11:13,124 INFO  [Log] CheckBox: CHK_BUTTER is NOT checked. 
+2016-11-26 23:11:13,294 INFO  [Log] *Try to verify Radio Is Not Checked* 
+2016-11-26 23:11:13,356 INFO  [Log] Radio: RDB_MALE is NOT checked. 
+2016-11-26 23:11:13,472 INFO  [Log] *Try to Click on WebElement* 
+2016-11-26 23:11:13,657 INFO  [Log] Clicked on WebElement RDB_MALE 
+2016-11-26 23:11:13,757 INFO  [Log] *Try to verify Radio Is Checked* 
+2016-11-26 23:11:13,826 INFO  [Log] Radio: RDB_MALE is checked. 
+2016-11-26 23:11:13,911 INFO  [Log] *Try to verify Radio Is Not Checked* 
+2016-11-26 23:11:13,958 INFO  [Log] Radio: RDB_FEMALE is NOT checked. 
+2016-11-26 23:11:14,049 INFO  [Log] *Try to close the browser* 
+2016-11-26 23:11:15,259 INFO  [Log] *Closed the browser* 
+2016-11-26 23:11:15,675 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-26 23:11:15,675 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-26 23:11:15,679 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-26 23:11:15,679 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-26 23:11:15,966 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-11-26 23:11:15,966 INFO  [Log] X 
+2016-11-26 23:11:15,966 INFO  [Log] X 
+2016-11-26 23:11:15,966 INFO  [Log] X 
+2016-11-26 23:11:15,966 INFO  [Log] X 
+2016-11-26 23:11:15,967 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-26 23:11:15,967 INFO  [Log] **************************************************************************************** 
+2016-11-26 23:11:15,967 INFO  [Log] **************************************************************************************** 
+2016-11-26 23:11:15,967 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$                 TestCase9       $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2016-11-26 23:11:15,967 INFO  [Log] **************************************************************************************** 
+2016-11-26 23:11:15,967 INFO  [Log] **************************************************************************************** 
+2016-11-26 23:11:15,967 INFO  [Log] *Try to Open Browser* 
+2016-11-26 23:11:23,991 INFO  [Log] Opened Browser: FF 
+2016-11-26 23:11:24,099 INFO  [Log] *Try to navigate to specify URL* 
+2016-11-26 23:11:28,068 INFO  [Log] Navigated to specify URL: http://www.javascripttoolbox.com/lib/mktree/ 
+2016-11-26 23:11:28,222 INFO  [Log] *Try to wait for 5 seconds* 
+2016-11-26 23:11:33,222 INFO  [Log] Waited for 5 seconds 
+2016-11-26 23:11:33,346 INFO  [Log] *Try to click TreeView Item* 
+2016-11-26 23:11:33,993 INFO  [Log] Item config.txt is existed in TreeView: TREE_DEFAULT 
+2016-11-26 23:11:34,094 INFO  [Log] *Try to verify TreeView Item Exist* 
+2016-11-26 23:11:34,483 INFO  [Log] Item schedule.idis existed in tree view: TREE_DEFAULT 
+2016-11-26 23:11:34,558 INFO  [Log] *Try to verify TreeView Item Not Exist* 
+2016-11-26 23:11:34,849 INFO  [Log] Item AAAAAAAAAis existed in TreeView: TREE_DEFAULT 
+2016-11-26 23:11:34,919 INFO  [Log] *Try to close the browser* 
+2016-11-26 23:11:35,426 INFO  [Log] *Closed the browser* 
+2016-11-26 23:11:35,478 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-26 23:11:35,478 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-26 23:11:35,478 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-26 23:11:35,478 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-26 23:11:35,578 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX             -E---N---D-             XXXXXXXXXXXXXXXXXXXXXX 
+2016-11-26 23:11:35,578 INFO  [Log] X 
+2016-11-26 23:11:35,578 INFO  [Log] X 
+2016-11-26 23:11:35,578 INFO  [Log] X 
+2016-11-26 23:11:35,578 INFO  [Log] X 
+2016-11-26 23:11:35,578 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-26 23:11:35,578 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-26 23:11:35,578 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-26 23:11:35,578 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-26 23:11:35,578 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-26 23:11:35,578 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-26 23:11:35,578 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-26 23:11:35,578 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-26 23:11:35,578 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-26 23:11:35,578 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-26 23:11:35,578 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-26 23:11:35,578 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-26 23:11:35,578 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-26 23:11:35,578 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-26 23:11:35,578 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-26 23:11:35,578 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-26 23:11:35,578 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-26 23:11:35,578 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-26 23:11:35,578 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-26 23:11:35,578 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-26 23:11:35,594 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-26 23:11:35,594 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-26 23:11:35,594 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-26 23:11:35,594 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-26 23:11:35,594 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 
+2016-11-26 23:11:35,594 ERROR [Log] Class ReadWriteExcel| Method getCellData | Exception desc: null 

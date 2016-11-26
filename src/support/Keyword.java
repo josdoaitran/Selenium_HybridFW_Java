@@ -25,6 +25,7 @@ import static support.ExecuteTestcase.*;
 /**
  * Created by DoaiTran on 26-Oct-16.
  * Create all definitions for actions on Selenium
+ * Lasted Upgrade: 26-Nov-2016.
  */
 public class Keyword {
     public static WebDriver DRIVER;
@@ -211,7 +212,7 @@ public class Keyword {
             Log.info("Submitted the button: "+object);
         }catch (Exception e){
             Log.info("-------- Unable to submit button: "+object+" --------"+e.getMessage());
-            ExecuteTestcase.bResult =false;
+            ExecuteTestcase.bResult = false;
         }
     }
     public static void navigateToBack(String object, String data){

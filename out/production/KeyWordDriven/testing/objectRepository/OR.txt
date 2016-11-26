@@ -48,3 +48,12 @@ CHK_MILK = .//*[@id='check1']
 CHK_BUTTER = .//*[@id='check2']
 RDB_MALE = .//*[@id='radio1']
 RDB_FEMALE = .//*[@id='radio2']
+
+#################### TREE VIEW EXAMPLE          ###########################################
+#################### URL: http://izip.us/17G    ###########################################
+
+TREE_DEFAULT = .//*[@id='tree1']/li[2]/ul/li[2]
+
+
+
+
