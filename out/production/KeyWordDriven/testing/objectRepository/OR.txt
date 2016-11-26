@@ -10,12 +10,17 @@
 #       Lable:  LBL_NAME                                                                    #
 #############################################################################################
 
-# Home Page
+################### Home Page                                         #######################
+################### URL: http://www.seleniumframework.com/            #######################
+
 TXT_STRATEGICDECISION = .//*[@id='content']/div[3]/div[1]/div/div/div/p[2]/span/a[1]
 LBL_BASICTUTORIAL = .//*[@id='content']/div[10]//span/a[@href ='http://www.seleniumframework.com/python-basic/what-is-python/']
 TXT_LEADERSHIP = .//*[@id='content']/div[3]/div[1]/div/div/div/p[1]/span/strong/span
 TXT_AGILETESTING = .//*[@id='content']/div[1]//h2/span/strong
-# PracticeForm page
+
+################### PracticeForm page                                   #####################
+################### URL: http://www.seleniumframework.com/Practiceform/ #####################
+
 WMB_TUTORIALS = .//*[@id='main-nav']/li[2]/a/span
 WMB_STRATEGICDECISION =.//*[@id='main-nav']/li[2]/ul/li[1]/a/span
 TXT_BOX = .//*[@id='vfb-9']
@@ -30,5 +35,16 @@ BTN_SWBMONTH = .//*[@id='ui-datepicker-div']/div/a[1]/span
 TBL_DAY22 = .//*[@id='ui-datepicker-div']/table/tbody/tr[4]/td[2]/a
 TXT_URL = .//*[@id='vfb-11']
 TEXT_URLERROR = .//*[@id='item-vfb-11']/label[2]
-#################### Only Testing ###################
+
+#################### Only Testing - Table-TC7    ###########################################
+#################### URL: https://goo.gl/HgpR6k  ###########################################
+
 TBL_TESTTABLE = .//*[@id='post-body-2641311481947341581']/div[1]/table/tbody/tr/td
+
+#################### Only Testing                ###########################################
+#################### URL: https://goo.gl/qSuGqY  ###########################################
+
+CHK_MILK = .//*[@id='check1']
+CHK_BUTTER = .//*[@id='check2']
+RDB_MALE = .//*[@id='radio1']
+RDB_FEMALE = .//*[@id='radio2']

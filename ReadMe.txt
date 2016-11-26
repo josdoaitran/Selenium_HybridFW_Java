@@ -26,6 +26,11 @@ Support:
     - selectByIndex                             - switchToIFrameWithID
     - switchToIFrameWithName                    - switchToMainPage
     - verifyTextInTable
+    - verifyCheckboxIsChecked                   - verifyCheckboxIsNotChecked
+    - verifyRadioIsChecked                      - verifyRadioIsNotChecked
+    - checkCheckBox                             - unCheckCheckBox
+    - clickTreeViewItem                         - verifyTreeViewItemExist
+    - verifyTreeViewItemNotExist
 ======================================= Exception Handling =============================================
 Getscreenshot
     + To take screenshots for failed steps on a test cases.

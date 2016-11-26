@@ -35,8 +35,8 @@ public class Keyword {
         /** Modification History:
         /**        Modify by: DoaiTran           Date: 04-Nov-2016       Note: https://goo.gl/qRMJtv
         /**************************************************************************************************/
-        Log.info("Opening Browser");
         try {
+            Log.info("*Try to Open Browser*");
             switch (data) {
                 case "FF":
                     DRIVER = new FirefoxDriver();
@@ -55,24 +55,26 @@ public class Keyword {
                     DRIVER.manage().window().maximize();
                     break;
             }
+            Log.info("Opened Browser: "+data);
         }catch (Exception e){
-            Log.info("Not able to open Browser --- " + e.getMessage());
+            Log.info("-------- Unable to open Browser --------" + e.getMessage());
             ExecuteTestcase.bResult = false;
         }
     }
     public static void navigateToURL (String object, String data){
         /***************************************************************************************************
-        /** Des: This function is used to navigate to BASE_URL
+        /** Des: This function is used to navigate to BASE_URL. BASE_URL is define on CONSTANTS.JAVA
         /** Created by DoaiTran. 26-Oct-2016
         /** Modification History:
         /**        Modify by: DoaiTran           Date: 27-Oct-2016       Note:
         /***************************************************************************************************/
         try {
-            Log.info("Navigating to URL");
+            Log.info("*Try to navigate to URL*");
             DRIVER.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
             DRIVER.navigate().to(Constants.URL);
+            Log.info("Navigated to BASE_URL");
         }catch (Exception e){
-            Log.info("Not able to navigate to URL --- "+ e.getMessage());
+            Log.info("-------- Unable to navigate to BASE_URL -------- "+ e.getMessage());
             ExecuteTestcase.bResult = false;
         }
     }
@@ -85,11 +87,12 @@ public class Keyword {
         /**        Modify by: DoaiTran           Date: 27-Oct-2016       Note:
         /****************************************************************************************************/
         try {
-            Log.info("Navigating to specify URL");
+            Log.info("*Try to navigate to specify URL*");
             DRIVER.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
             DRIVER.navigate().to(data);
+            Log.info("Navigated to specify URL: "+data);
         }catch (Exception e){
-            Log.info("Not able to navigate to URL --- "+ e.getMessage());
+            Log.info("-------- Unable to navigate to URL --------"+ e.getMessage());
             ExecuteTestcase.bResult = false;
         }
     }
@@ -101,10 +104,11 @@ public class Keyword {
         /**        Modify by: DoaiTran           Date: 27-Oct-2016       Note:
         /*****************************************************************************************************/
         try {
-            Log.info("Closing the browser");
+            Log.info("*Try to close the browser*");
             DRIVER.quit();
+            Log.info("*Closed the browser*");
         }catch (Exception e){
-            Log.info("Not able to close Browser --- "+ e.getMessage());
+            Log.info("-------- Unable to close Browser --------"+ e.getMessage());
             ExecuteTestcase.bResult = false;
         }
     }
@@ -116,25 +120,27 @@ public class Keyword {
         /**        Modify by:            Date:       Note:
         /*******************************************************************************************************/
         try {
-            Log.info("Clicking on WebElement "+ object);
+            Log.info("*Try to Click on WebElement*");
             DRIVER.findElement(By.xpath(OR.getProperty(object))).click();
+            Log.info("Clicked on WebElement "+ object);
         }catch (Exception e){
-            Log.info("Not able to click on Element --- "+ e.getMessage());
+            Log.info("-------- Unable to click Element: "+object+" --------"+e.getMessage());
             ExecuteTestcase.bResult = false;
         }
     }
     public static void clickElementByLinkText(String object, String data){
-        /****************************************************************************************************
+         /****************************************************************************************************
         /** Des: This function is used to clickElementByLinkText
         /** Created by DoaiTran. 26-Oct-2016
         /** Modification History:
         /**        Modify by: DoaiTran           Date: 27-Oct-2016       Note:
         /****************************************************************************************************/
         try {
-            Log.info("Clicking on WebElement ByLinkText "+ object);
+            Log.info("*Clicked on WebElement ByLinkText*");
             DRIVER.findElement(By.linkText(OR.getProperty(object))).click();
+            Log.info("Clicked on WebElement ByLinkText "+ object);
         }catch (Exception e){
-            Log.info("Not able to click on Element --- "+ e.getMessage());
+            Log.info("-------- Unable to click Element By LinkText: "+object+" --------"+e.getMessage());
             ExecuteTestcase.bResult = false;
         }
     }
@@ -146,12 +152,13 @@ public class Keyword {
         /**        Modify by:            Date:       Note:
         /****************************************************************************************************/
         try{
-            Log.info("Wait for 5 seconds");
+            Log.info("*Try to wait for 5 seconds*");
             //int ndata = Integer.parseInt(data);
             Thread.sleep(5000);
+            Log.info("Waited for 5 seconds");
         }
         catch (Exception e){
-            Log.info("Not able to wait --- "+ e.getMessage());
+            Log.info("-------- Unable to wait -------- "+ e.getMessage());
             ExecuteTestcase.bResult = false;
         }
     }
@@ -163,12 +170,13 @@ public class Keyword {
         /**        Modify by:            Date:       Note:
         /****************************************************************************************************/
         try{
-            Log.info("Input value "+ object + " with data: " + data);
+            Log.info("*Try to input value*");
             WebDriverWait wait = new WebDriverWait(DRIVER, 15);
             wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(OR.getProperty(object)))).clear();
             DRIVER.findElement(By.xpath(OR.getProperty(object))).sendKeys(data);
+            Log.info("Inputed value: "+ data + " to element " + object);
         }catch (Exception e){
-            Log.info("Not able to input --- "+ e.getMessage());
+            Log.info("-------- Unable to input value: "+ data + " to element " + object+" --------"+ e.getMessage());
             ExecuteTestcase.bResult = false;
         }
     }
@@ -180,11 +188,12 @@ public class Keyword {
         /**        Modify by:            Date:       Note:
         /****************************************************************************************************/
         try{
-            Log.info("Clear data on text box");
+            Log.info("*Try clear data on TextBox*");
             WebDriverWait wait = new WebDriverWait(DRIVER, 15);
             wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(OR.getProperty(object)))).clear();
+            Log.info("Cleared data on TextBox: "+object);
         }catch (Exception e){
-            Log.info("Not able to clear text box" + e.getMessage());
+            Log.info("-------- Unable to clear TextBox: "+object+" --------"+e.getMessage());
             ExecuteTestcase.bResult = false;
         }
     }
@@ -196,11 +205,12 @@ public class Keyword {
         /**        Modify by:            Date:       Note:
         /****************************************************************************************************/
         try{
-            Log.info("Submit the button");
+            Log.info("*Try to submit the button*");
             WebDriverWait wait = new WebDriverWait(DRIVER, 15);
             wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(OR.getProperty(object)))).submit();
+            Log.info("Submitted the button: "+object);
         }catch (Exception e){
-            Log.info("Not able ti submit button"+e.getMessage());
+            Log.info("-------- Unable to submit button: "+object+" --------"+e.getMessage());
             ExecuteTestcase.bResult =false;
         }
     }
@@ -212,11 +222,12 @@ public class Keyword {
         /**        Modify by:            Date:       Note:
         /****************************************************************************************************/
         try{
-            Log.info("Navifate to back page");
+            Log.info("*Try to navigate to back page*");
             DRIVER.navigate().back();
             Thread.sleep(5000);
+            Log.info("Navigated to back page");
         }catch (Exception e){
-            Log.info("Not able to NavigatetoBack");
+            Log.info("-------- Unable to Navigate to Back --------"+e.getMessage());
             ExecuteTestcase.bResult = false;
         }
     }
@@ -228,25 +239,29 @@ public class Keyword {
         /**        Modify by:            Date:       Note:
         /****************************************************************************************************/
         try{
-            Log.info("Navigate to Forward page");
+            Log.info("*Try to Navigate to Forward page*");
             DRIVER.navigate().forward();
+            Thread.sleep(5000);
+            Log.info("Navigated to Forward page");
         }catch (Exception e){
-            Log.info("Not able to NavigatetoForward");
+            Log.info("-------- Unable to Navigate to Forward --------"+e.getMessage());
             ExecuteTestcase.bResult = false;
         }
     }
     public static void refreshPage(String object, String data){
         /****************************************************************************************************
-        /** Des: This function is used to refresh page
+        /** Des: This function is used to refresh page.
         /** Created by DoaiTran. On: 13-Nov-2016
         /** Modification History:
         /**        Modify by:            Date:       Note:
         /****************************************************************************************************/
         try{
-            Log.info("Refresh page");
+            Log.info("*Try to Refresh page*");
             DRIVER.navigate().refresh();
+            Thread.sleep(5000);
+            Log.info("Refreshed page");
         }catch (Exception e){
-            Log.info("Not able to refresh page");
+            Log.info("-------- Unable to refresh page --------"+e.getMessage());
             ExecuteTestcase.bResult = false;
         }
     }
@@ -258,12 +273,13 @@ public class Keyword {
         /**        Modify by:            Date:       Note:
         /****************************************************************************************************/
         try{
-            Log.info("Hover to element and click");
+            Log.info("*Try to hover to move To Element*");
             Actions actions = new Actions(DRIVER);
             WebElement Element = DRIVER.findElement(By.xpath(OR.getProperty(object)));
             actions.moveToElement(Element).perform();
+            Log.info("Hovered to move To Element: "+object);
         }catch (Exception e){
-            Log.info("Not able to movetoElement");
+            Log.info("-------- Unble to move to Element: "+object+ " --------"+e.getMessage());
             ExecuteTestcase.bResult = false;
         }
     }
@@ -275,12 +291,13 @@ public class Keyword {
         /**        Modify by:            Date:       Note:
         /****************************************************************************************************/
         try{
-            Log.info("DoubleClick on Element: " + data);
+            Log.info("*Try to DoubleClick on Element*");
             Actions actions = new Actions(DRIVER);
             WebElement Element = DRIVER.findElement(By.xpath(OR.getProperty(object)));
             actions.doubleClick().perform();
+            Log.info("DoubleClicked on Element: "+ data);
         }catch (Exception e){
-            Log.info("Not able to doubleClick on Element: " + data);
+            Log.info("-------- Unable to doubleClick on Element: " + data+ " --------"+e.getMessage());
             ExecuteTestcase.bResult = false;
         }
     }
@@ -292,11 +309,12 @@ public class Keyword {
         /**        Modify by:            Date:       Note:
         /****************************************************************************************************/
         try{
-            Log.info("Wait for element present");
+            Log.info("*Try to Wait for element present*");
             WebDriverWait wait = new WebDriverWait(DRIVER, 15);
             wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(OR.getProperty(object))));
+            Log.info("Element: "+object+" is presented.");
         }catch (Exception e){
-            Log.info("Element is not presented");
+            Log.info("-------- Element: "+object+" is not presented --------"+e.getMessage());
             ExecuteTestcase.bResult = false;
         }
     }
@@ -308,11 +326,12 @@ public class Keyword {
         /**        Modify by:            Date:       Note:
         /****************************************************************************************************/
         try{
-            Log.info("Verify Element is existed.");
+            Log.info("*Try toVerify Element is existed*");
             WebDriverWait wait = new WebDriverWait(DRIVER, 15);
             wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(OR.getProperty(object))));
+            Log.info("Element: "+object+" is existed");
         }catch (Exception e) {
-            Log.info("Element is not existed.");
+            Log.info("-------- Element: "+object+" is not existed --------"+e.getMessage());
             ExecuteTestcase.bResult = false;
         }
     }
@@ -324,17 +343,17 @@ public class Keyword {
         /**        Modify by:            Date:       Note:
         /****************************************************************************************************/
         try{
-            Log.info("verify text between get from element and expected text: "+ data);
+            Log.info("*Try to verify text between get from element and expected text*");
             String actualText = DRIVER.findElement(By.xpath(OR.getProperty(object))).getText();
             if(actualText.equals(data)){
                 ExecuteTestcase.bResult = true;
-                Log.info("Expected text and actual text are the same.");
+                Log.info("Expected text on "+object+"and actual text: "+data+" are the same.");
             }else {
                 ExecuteTestcase.bResult = false;
-                Log.info("Actual text and expected text are different.");
+                Log.info("Actual text on "+object+"and actual text: "+data+" are different.");
             }
         }catch(Exception e){
-            Log.info("Not able to verify text.");
+            Log.info("-------- Unable to verify Actual text on "+object+"and actual text: "+data+" --------"+e.getMessage());
             ExecuteTestcase.bResult = false;
         }
     }
@@ -346,12 +365,13 @@ public class Keyword {
         /**        Modify by:            Date:       Note:
         /****************************************************************************************************/
         try{
-            Log.info("Try to kill all browser processes.");
+            Log.info("*Try to kill all browser processes*");
             taskkill("Chrome");
             taskkill("IE");
             taskkill("FF");
+            Log.info("Killed all browser processes. Close all browsers.");
         }catch (Exception e){
-            Log.info("Not able to kill all processes.");
+            Log.info("-------- Unable to close all browser. --------"+e.getMessage());
             ExecuteTestcase.bResult = false;
         }
     }
@@ -368,6 +388,8 @@ public class Keyword {
             Runtime.getRuntime().exec(strCmdLine);
         }catch (Exception e){
             e.printStackTrace();
+            Log.info("-------- Not able to kill all processes. --------"+e.getMessage());
+            ExecuteTestcase.bResult = false;
         }
     }
     public static void waitForAjax(String object, String data){
@@ -378,7 +400,7 @@ public class Keyword {
         /**        Modify by:            Date:       Note:
         /****************************************************************************************************/
         try {
-            Log.info("Wait for Ajax script be executed.");
+            Log.info("*Wait for Ajax script be executed*");
             new WebDriverWait(DRIVER, 180).until(new ExpectedCondition<Boolean>()
             {
                 public Boolean apply(WebDriver driver) {
@@ -386,8 +408,9 @@ public class Keyword {
                     return (Boolean)js.executeScript("return jQuery.active == 0");
                 }
             });
+            Log.info("Ajax script was executed");
         }catch (Exception e){
-            Log.info("Error Ajax script waiting.");
+            Log.info("-------- Error Ajax script waiting --------"+e.getMessage());
             ExecuteTestcase.bResult = false;
         }
     }
@@ -399,11 +422,12 @@ public class Keyword {
         /**        Modify by:            Date:       Note:
         /****************************************************************************************************/
         try{
-            Log.info("Try to select by visible text.");
+            Log.info("*Try to select by visible text*");
             Select selectAction =  new Select(DRIVER.findElement(By.xpath(OR.getProperty(object))));
             selectAction.selectByVisibleText(data);
+            Log.info("Selected "+object+ " by visible text: "+data);
         }catch (Exception e){
-            Log.info("Unable to select by visible text.");
+            Log.info("-------- Unable to select "+object+" by visible text: "+data+" --------"+e.getMessage());
             ExecuteTestcase.bResult = false;
         }
     }
@@ -415,11 +439,12 @@ public class Keyword {
         /**        Modify by:            Date:       Note:
         /****************************************************************************************************/
         try{
-            Log.info("Try to select by value.");
+            Log.info("*Try to select by value*");
             Select selectAction =  new Select(DRIVER.findElement(By.xpath(OR.getProperty(object))));
             selectAction.selectByValue(data);
+            Log.info("Selected "+object+ " by value. "+data);
         }catch (Exception e){
-            Log.info("Unable to select by value.");
+            Log.info("-------- Unable to select "+object+" by value: "+data+" --------"+e.getMessage());
             ExecuteTestcase.bResult = false;
         }
     }
@@ -431,11 +456,12 @@ public class Keyword {
         /**        Modify by:            Date:       Note:
         /****************************************************************************************************/
         try{
-            Log.info("Try to select by index.");
+            Log.info("*Try to select by index*");
             Select selectAction =  new Select(DRIVER.findElement(By.xpath(OR.getProperty(object))));
             selectAction.selectByIndex(data);
+            Log.info("Selected "+object+ " by index: "+data);
         }catch (Exception e){
-            Log.info("Unable to select by index.");
+            Log.info("-------- Unable to select "+object+" by index: "+data+" --------"+e.getMessage());
             ExecuteTestcase.bResult = false;
         }
     }
@@ -450,18 +476,28 @@ public class Keyword {
         /**  Modification History:
         /**         Modify by:            Date:       Note:
         /*****************************************************************************************************/
+        Boolean valueResult = true;
         try{
-            Log.info("To switch to iFrame with name");
+            Log.info("*Try to switch to iFrame with name*");
             List<WebElement> iframes = DRIVER.findElements(By.tagName("iframe")); // (By.xpath("//iframe"));
             for (WebElement iframe : iframes) {
                 System.out.println(iframe);
                 if(iframe.getAttribute("name").equals(data)){
                     DRIVER.switchTo().frame(data);
+                    valueResult = true;
                     break;
+                }else {
+                    valueResult = false;
                 }
             }
+            if(valueResult){
+                Log.info("We are in iFrame with Name: "+data);
+            }else {
+                Log.info("Unable to switch to iFrame with iFrame Name: "+data+" --------");
+                ExecuteTestcase.bResult =false;
+            }
         }catch (Exception e){
-            Log.info("Unable to switch to iFrame with name");
+            Log.info("--------  Unable to switch to iFrame with name: "+data+" --------"+e.getMessage());
             ExecuteTestcase.bResult = false;
         }
     }
@@ -472,18 +508,28 @@ public class Keyword {
         /** Modification History:
         /**         Modify by:            Date:       Note:
         /***************************************************************************************************/
+        Boolean valueResult = true;
         try{
-            Log.info("To switch to iFrame with iFrameID");
+            Log.info("*Try to switch to iFrame with iFrameID*");
             List<WebElement> iframes = DRIVER.findElements(By.id("iframe"));
             for (WebElement iframe : iframes) {
                 System.out.println(iframe);
                 if(iframe.getAttribute("id").equals(data)){
                     DRIVER.switchTo().frame(data);
+                    valueResult = true;
                     break;
+                }else {
+                    valueResult =false;
                 }
             }
+            if(valueResult){
+                Log.info("We are in iFrame with ID: "+data);
+            }else {
+                Log.info("Unable to switch to iFrame with iFrame ID: "+data);
+                ExecuteTestcase.bResult =false;
+            }
         }catch (Exception e){
-            Log.info("Unable to switch to iFrame with iFrame ID");
+            Log.info("-------- Unable to switch to iFrame with iFrame ID: "+data+" --------"+e.getMessage());
             ExecuteTestcase.bResult = false;
         }
     }
@@ -497,10 +543,11 @@ public class Keyword {
         /**         Modify by:            Date:       Note:
         /*****************************************************************************************************/
         try{
-            Log.info("To switch to Main Page");
+            Log.info("*Try to switch to Main Page layout*");
             DRIVER.switchTo().defaultContent();
+            Log.info("We are in Main Page layout.");
         }catch (Exception e){
-            Log.info("Unable to switch to Main Page");
+            Log.info("-------- Unable to switch to Main Page layout --------"+e.getMessage());
             ExecuteTestcase.bResult = false;
         }
     }
@@ -515,16 +562,14 @@ public class Keyword {
         /****************************************************************************************************/
         boolean valueResult = false;
         try{
+            Log.info("*Try to verify Text In Table*");
             List<WebElement> listCell = DRIVER.findElements(By.xpath(OR.getProperty(object)));
             for (WebElement iCell: listCell){
                 if(iCell.getText().equals(data)){
-                    Log.info("Value on table is existing.");
-                    //System.out.println("Value on table is existing.");
+                    Log.info("Value: "+data+" on table: "+object+" is existing.");
                     valueResult = true;
                     break;
                 }else {
-                    Log.info("Value on table is not existing.");
-                    //System.out.println("Value on table is not existing.");
                     valueResult = false;
                 }
             }
@@ -532,9 +577,10 @@ public class Keyword {
                 ExecuteTestcase.bResult = true;
             }else {
                 ExecuteTestcase.bResult = false;
+                Log.info("Value: "+data+" on table: "+object+"is not existing.");
             }
         }catch (Exception e){
-            Log.info("Unable to verify text.");
+            Log.info("-------- Unable to verify data: "+data+" in table: "+object+" --------"+e.getMessage());
             ExecuteTestcase.bResult = false;
         }
     }
@@ -546,15 +592,16 @@ public class Keyword {
         /**        Modify by:            Date:       Note:
         /****************************************************************************************************/
         try{
+            Log.info("*Try to verify Checkbox Is Checked*");
             WebElement checkbox = DRIVER.findElement(By.xpath(OR.getProperty(object)));
             if(checkbox.isSelected() == true){
-                Log.info("CheckBox is checked.");
+                Log.info("CheckBox: "+object+" is checked.");
             }else{
-                Log.info("CheckBox is NOT checked.");
+                Log.info("CheckBox: "+object+" is NOT checked.");
                 ExecuteTestcase.bResult = false;
             }
         }catch (Exception e) {
-            Log.info("Unable to verify checkbox is checked or not.");
+            Log.info("-------- Unable to verify checkbox "+object+" is checked or not --------"+e.getMessage());
             ExecuteTestcase.bResult = false;
         }
     }
@@ -567,15 +614,16 @@ public class Keyword {
         /**       Modify by:            Date:       Note:
         /****************************************************************************************************/
         try{
+            Log.info("*Try to verify Checkbox Is Not Checked*");
             WebElement checkbox = DRIVER.findElement(By.xpath(OR.getProperty(object)));
             if(checkbox.isSelected() == false){
-                Log.info("CheckBox is NOT checked.");
+                Log.info("CheckBox: "+object+" is NOT checked.");
             }else{
-                Log.info("CheckBox is checked.");
+                Log.info("CheckBox: "+object+" is checked.");
                 ExecuteTestcase.bResult = false;
             }
         }catch (Exception e) {
-            Log.info("Unable to verify checkbox is checked or not.");
+            Log.info("-------- Unable to verify checkbox: "+object+" is available  or not --------"+e.getMessage());
             ExecuteTestcase.bResult = false;
         }
     }
@@ -587,15 +635,16 @@ public class Keyword {
         /**         Modify by:            Date:       Note:
         /**************************************************************************************************/
         try{
+            Log.info("*Try to verify Radio Is Checked*");
             WebElement radio = DRIVER.findElement(By.xpath(OR.getProperty(object)));
             if(radio.isSelected() == true){
-                Log.info("Radio is checked.");
+                Log.info("Radio: "+object+" is checked.");
             }else{
-                Log.info("Radio is NOT checked.");
+                Log.info("Radio: "+object+" is NOT checked.");
                 ExecuteTestcase.bResult = false;
             }
         }catch (Exception e) {
-            Log.info("Unable to verify checkbox is checked or not.");
+            Log.info("-------- Unable to verify radio: "+object+" is checked or not --------"+e.getMessage());
             ExecuteTestcase.bResult = false;
         }
     }
@@ -607,37 +656,42 @@ public class Keyword {
         /**         Modify by:            Date:       Note:
         /**************************************************************************************************/
         try{
+            Log.info("*Try to verify Radio Is Not Checked*");
             WebElement radio = DRIVER.findElement(By.xpath(OR.getProperty(object)));
             if(radio.isSelected() == false){
-                Log.info("Radio is NOT checked.");
+                Log.info("Radio: "+object+" is NOT checked.");
             }else{
-                Log.info("Radio is checked.");
+                Log.info("Radio: "+object+" is checked.");
                 ExecuteTestcase.bResult = false;
             }
         }catch (Exception e) {
-            Log.info("Unable to verify checkbox is checked or not.");
+            Log.info("-------- Unable to verify radio: "+object+" is available or not --------"+e.getMessage());
             ExecuteTestcase.bResult = false;
         }
     }
-    public static void checkCheckbox(String object, String data){
+    public static void checkCheckBox(String object, String data){
         /**************************************************************************************************
         /** Des: This function is used to check Checkbox
         /** Created by DoaiTran. On: 24-Nov-2016
         /** Modification History:
-        /**         Modify by:            Date:       Note:
+        /**         Modify by: DoaiTran            Date: 26-Nov-2016       Note:
         /**************************************************************************************************/
         try{
+            Log.info("*Try to Check CheckBox*");
             WebElement objCheckbox = DRIVER.findElement(By.xpath(OR.getProperty(object)));
             if(objCheckbox.isSelected()== false){
                 objCheckbox.click();
-                Log.info("Check checkedbox.");
+                Log.info("Check CheckBox: "+object);
+            }else {
+                Log.info("CheckBox: "+object+ " was checked. Unable to check CheckBox.");
+                ExecuteTestcase.bResult = false;
             }
         }catch (Exception e){
-            Log.info("Unable to check checkedbox.----");
+            Log.info("-------- Unable to check CheckBox: "+object+" --------"+e.getMessage());
             ExecuteTestcase.bResult = false;
         }
     }
-    public static void  unCheckCheckbox (String object, String data){
+    public static void  unCheckCheckBox (String object, String data){
         /**************************************************************************************************
         /** Des: This function is used to uncheck Checkbox
         /** Created by DoaiTran. On: 24-Nov-2016
@@ -645,13 +699,17 @@ public class Keyword {
         /**         Modify by:            Date:       Note:
         /**************************************************************************************************/
         try{
+            Log.info("*Try to unCheck CheckBox*");
             WebElement objCheckbox = DRIVER.findElement(By.xpath(OR.getProperty(object)));
             if(objCheckbox.isSelected()==true){
                 objCheckbox.click();
-                Log.info("Uncheck checkedbox.");
+                Log.info("Uncheck CheckBox: "+object);
+            }else {
+                Log.info("CheckBox: "+object+ " was unchecked. Unable to uncheck CheckBox.");
+                ExecuteTestcase.bResult = false;
             }
         }catch (Exception e){
-            Log.info("Unable to uncheck checkedbox.----");
+            Log.info("-------- Unable to uncheck CheckBox: "+object+" --------"+e.getMessage());
             ExecuteTestcase.bResult = false;
         }
     }
@@ -664,6 +722,7 @@ public class Keyword {
         /************************************************************************************************/
         boolean valueResult = false;
         try{
+            Log.info("*Try to click TreeView Item*");
             WebElement treeView = DRIVER.findElement(By.xpath(OR.getProperty(object)));
             List<WebElement> listChild = treeView.findElements(By.tagName("span"));
             for (WebElement child : listChild)
@@ -673,25 +732,26 @@ public class Keyword {
                     break;
                 }
             if(valueResult = true){
-                Log.info("Item "+ data +"is existed in tree view.");
+                Log.info("Item "+ data +" is existed in TreeView: "+object);
             }else {
-                Log.info("Item "+ data +"is NOT existed in tree view.");
+                Log.info("Item "+ data +" is NOT existed in TreeView: "+object);
                 ExecuteTestcase.bResult = false;
             }
         }catch (Exception e){
-            Log.info("Unable to click Tree View Item. ");
+            Log.info("-------- Unable to click TreeView Item: "+object+" --------"+e.getMessage());
             ExecuteTestcase.bResult = false;
         }
     }
-    public static void  verifyTreeviewItemExist (String object, String data){
+    public static void  verifyTreeViewItemExist (String object, String data){
         /*************************************************************************************************
-        /** Des: This function is used to verify Tree view Item Exist
+        /** Des: This function is used to verify Treeview Item Exist
         /** Created by DoaiTran. On: 25-Nov-2016
         /** Modification History:
         /**         Modify by:            Date:       Note:
         /************************************************************************************************/
         boolean valueResult = false;
         try{
+            Log.info("*Try to verify TreeView Item Exist*");
             WebElement treeView = DRIVER.findElement(By.xpath(OR.getProperty(object)));
             List<WebElement> listChild = treeView.findElements(By.tagName("span"));
             for (WebElement child : listChild)
@@ -700,25 +760,26 @@ public class Keyword {
                     break;
                 }
             if(valueResult = true){
-                Log.info("Item "+ data +"is existed in tree view.");
+                Log.info("Item "+ data +"is existed in tree view: "+object);
             }else {
-                Log.info("Item "+ data +"is NOT existed in tree view.");
+                Log.info("Item "+ data +"is NOT existed in tree view: "+object);
                 ExecuteTestcase.bResult = false;
             }
         }catch (Exception e){
-            Log.info("Unable to click Tree View Item. ");
+            Log.info("-------- Unable to click TreeView Item: "+object+" --------"+e.getMessage());
             ExecuteTestcase.bResult = false;
         }
     }
-    public static void  verifyTreeviewItemNotExist (String object, String data){
+    public static void  verifyTreeViewItemNotExist (String object, String data){
         /*************************************************************************************************
-         /** Des: This function is used to click TreeView Item
+         /** Des: This function is used to verify Tree view Item Not Exist
          /** Created by DoaiTran. On: 25-Nov-2016
          /** Modification History:
          /**         Modify by:            Date:       Note:
          /************************************************************************************************/
         boolean valueResult = false;
         try{
+            Log.info("*Try to verify TreeView Item Not Exist*");
             WebElement treeView = DRIVER.findElement(By.xpath(OR.getProperty(object)));
             List<WebElement> listChild = treeView.findElements(By.tagName("span"));
             for (WebElement child : listChild)
@@ -727,13 +788,13 @@ public class Keyword {
                     break;
                 }
             if(valueResult = true){
-                Log.info("Item "+ data +"is existed in tree view.");
+                Log.info("Item "+ data +"is existed in TreeView: "+object);
             }else {
-                Log.info("Item "+ data +"is NOT existed in tree view.");
+                Log.info("Item "+ data +"is NOT existed in TreeView: "+object);
                 ExecuteTestcase.bResult = false;
             }
         }catch (Exception e){
-            Log.info("Unable to click Tree View Item. ");
+            Log.info("-------- Unable to click TreeView Item: "+object+" --------"+e.getMessage());
             ExecuteTestcase.bResult = false;
         }
     }
