@@ -800,6 +800,12 @@ public class Keyword {
         }
     }
     public static void closeAlertOfBrowser(String object, String data){
+        /************************************************************************************************
+        /** Des: This function is used to close Alert Of Browser
+        /** Created by DoaiTran. On: 26-Nov-2016
+        /** Modification History:
+        /**         Modify by:            Date:       Note:
+        /************************************************************************************************/
         try{
             Log.info("*Try to close alert of browser*");
             DRIVER.switchTo().alert().dismiss();
@@ -810,6 +816,12 @@ public class Keyword {
         }
     }
     public static void acceptAlertOfBrowser(String object, String data){
+        /***********************************************************************************************
+        /** Des: This function is used to accept Alert Of Browser
+        /** Created by DoaiTran. On: 26-Nov-2016
+        /** Modification History:
+        /**         Modify by:            Date:       Note:
+        /***********************************************************************************************/
         try{
             Log.info("*Try to accept alert of browser*");
             DRIVER.switchTo().alert().accept();
@@ -820,6 +832,12 @@ public class Keyword {
         }
     }
     public static void verifyAlertText(String object, String data){
+        /**********************************************************************************************
+        /** Des: This function is used to accept Alert Of Browser
+        /** Created by DoaiTran. On: 26-Nov-2016
+        /** Modification History:
+        /**         Modify by:            Date:       Note:
+        /**********************************************************************************************/
         try{
             Log.info("*Try to verify AlertText*");
             String getText = DRIVER.switchTo().alert().getText();
@@ -835,6 +853,12 @@ public class Keyword {
         }
     }
     public static void sendValueToAlert(String object, String data){
+        /*********************************************************************************************
+        /** Des: This function is used to send Value To Alert
+        /** Created by DoaiTran. On: 26-Nov-2016
+        /** Modification History:
+        /**         Modify by:            Date:       Note:
+        /*********************************************************************************************/
         try{
             Log.info("*Try to send value to Alert*");
             DRIVER.switchTo().alert().sendKeys(data);
