@@ -27,9 +27,9 @@ public class Controller {
         OR = new Properties(System.getProperties());
         OR.load(fs);
         //****************************************************************************************************//
-        // Select the testsuite and test report location and input name of test suite before executing
+        // Select the test suite and test report location and input name of test suite before executed
         //****************************************************************************************************//
-        ExecuteTestcase.execute_TestCase(".\\src\\testing\\dataEngine\\TestSuite1.xlsx",".\\src\\testing\\reports\\TestResult_TestSuite1.xlsx","TestSuite1");
-        //ExecuteTestcase.execute_TestCase(".\\src\\testing\\dataEngine\\TestSuite2.xlsx",".\\src\\testing\\reports\\TestResult_TestSuite2.xlsx","TestSuite2");
+        //ExecuteTestcase.execute_TestCase(".\\src\\testing\\dataEngine\\TestSuite1.xlsx",".\\src\\testing\\reports\\TestResult_TestSuite1.xlsx","TestSuite1");
+        ExecuteTestcase.execute_TestCase(".\\src\\testing\\dataEngine\\TestSuite-Demo.xlsx",".\\src\\testing\\reports\\TestResult_TestSuite-Demo.xlsx","TestSuite-Demo");
     }
 }

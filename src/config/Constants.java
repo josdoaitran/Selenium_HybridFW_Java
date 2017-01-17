@@ -8,10 +8,13 @@ package config;
  * Updated by DoaiTran: 08-Nov-16 => Ref: testing.reports
  *************************************************************************************************/
 public class Constants {
+    //********************************************************************************************
+    // List all initial definition for project
+    // We will define object repository file (txt)
     public static final String URL = "http://www.seleniumframework.com/";
     public static final String Path_OR = ".\\src\\testing\\objectRepository\\OR.txt";
-        //public static final String Path_TestData = ".\\src\\testing.dataEngine\\TestSuite1.xlsx";
-        //public static final String Path_SaveExcel = ".\\src\\testing.reports\\TestResult_TestSuite1.xlsx";
+    public static final String Path_OR_DEMO = ".\\src\\testing\\objectRepository\\OR_DEMO.txt";
+    //********************************************************************************************
     //List of Data Sheet Column Numbers
     public static final int Col_TestCaseID = 0;
     public static final int Col_TestStepID = 1 ;

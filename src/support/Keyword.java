@@ -175,7 +175,7 @@ public class Keyword {
             WebDriverWait wait = new WebDriverWait(DRIVER, 15);
             wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(OR.getProperty(object)))).clear();
             DRIVER.findElement(By.xpath(OR.getProperty(object))).sendKeys(data);
-            Log.info("Inputed value: "+ data + " to element " + object);
+            Log.info("Inputted value: "+ data + " to element " + object);
         }catch (Exception e){
             Log.info("-------- Unable to input value: "+ data + " to element " + object+" --------"+ e.getMessage());
             ExecuteTestcase.bResult = false;
@@ -280,7 +280,7 @@ public class Keyword {
             actions.moveToElement(Element).perform();
             Log.info("Hovered to move To Element: "+object);
         }catch (Exception e){
-            Log.info("-------- Unble to move to Element: "+object+ " --------"+e.getMessage());
+            Log.info("-------- Unable to move to Element: "+object+ " --------"+e.getMessage());
             ExecuteTestcase.bResult = false;
         }
     }
@@ -316,6 +316,23 @@ public class Keyword {
             Log.info("Element: "+object+" is presented.");
         }catch (Exception e){
             Log.info("-------- Element: "+object+" is not presented --------"+e.getMessage());
+            ExecuteTestcase.bResult = false;
+        }
+    }
+    public static void  waitForElementAbleToClick(String object, String data){
+        /****************************************************************************************************
+         /** Des: This function is used to waitForElementPresent
+         /** Created by DoaiTran. On: 20-Nov-2016
+         /** Modification History:
+         /**        Modify by:            Date:       Note:
+         /****************************************************************************************************/
+        try{
+            Log.info("*Try to Wait for element is able to click*");
+            WebDriverWait wait = new WebDriverWait(DRIVER, 15);
+            wait.until(ExpectedConditions.elementToBeClickable(By.xpath(OR.getProperty(object))));
+            Log.info("Element: "+object+" is able to click.");
+        }catch (Exception e){
+            Log.info("-------- Element: "+object+" is not able to click --------"+e.getMessage());
             ExecuteTestcase.bResult = false;
         }
     }
